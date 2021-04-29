@@ -22,7 +22,7 @@ public class Page4 extends Fragment {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);//hey
     }
 
     @Nullable
