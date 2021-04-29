@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stove1title">Step 1: Gas stove grates</string>
+    <string name="stove2title">Step 2: Wipe grease from stovetop</string>
+    <string name="stove3title">Step 3: Spray with vinegar</string>
+    <string name="stove4title">Step 4: Coat with baking soda</string>
+    <string name="stove5title">Step 5: Brush and wipe</string>
+
+    <string name="stove1text">Remove the stove grates to access the entire stovetop.
+        So, you can start with deep cleaning. The stove grates become oily and dirty,
+        which is difficult to clean. You may soak the grates into a warm water and soap solution.
+        Let it soak for 15-20 minutes. The grease should come off by then, or you may scrub
+        it to get rid of the remaining grease. Take some vinegar on tissue paper. Then,
+        rub the tissue paper on the stove grates to remove grease from hidden edges.</string>
+    <string name="stove2text">Cover the burner with a plastic bag, it makes sure no liquid
+        solution gets into the holes in your stove. Now wipe off those extra greases and
+        debris with a damp cloth or microfiber towel. You may take a little amount of soap
+        into the towel.</string>
+    <string name="stove3text">Take vinegar into a spray bottle and spray vinegar over the
+        greasy part of the cooktop. Spray all over the greasy marks. Now cover all the
+        sprayed areas with tissue papers. Make sure the tissue paper is thoroughly wet.
+        You may spray some more vinegar on it to ensure it is wet. Leave the tissue paper
+        for about an hour and let it soak. It will help to loosen baked-on grease. Now rub
+        all this tissue paper over the stovetop.</string>
+    <string name="stove4text">Sprinkle baking soda on the stovetop. Focus on the parts which
+        have more grease and still rust. Then spray vinegar over the baking soda. Combining
+        both makes the tough stains softer. Both will react, which is normal. It will take
+        a few minutes to collapse the tougher scorch marks.</string>
+    <string name="stove5text">Now take a non-abrasive brush or use the abrasive side of the
+        sponge to rub. The abrasive side of the sponge will not be too harsh on the baked-on
+        gas stovetop. Brush the surface gently until you get rid of the remaining rust and grease.
+        Finally, take a soft microfiber towel to wipe your gas stovetop. Wipe it until your gas
+        stovetop looks clean and shiny like before. Make sure you do not damage any metal parts
+        while cleaning.</string>
+
+    <string name="stovetips">Note that consistency is the name of the game. You need to take a
+        couple of minutes every day to clean your gas stovetop. It will save the most time. From
+        now on, you can cook on your gas stove without worrying about baked-on grease.</string>
+</resources>

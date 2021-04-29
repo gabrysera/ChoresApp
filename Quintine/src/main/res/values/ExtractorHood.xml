@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hood1title">Step 1: Remove the filters</string>
+    <string name="hood2title">Step 2: Clean the filters</string>
+    <string name="hood3title">Step 3: Inside of the hood</string>
+    <string name="hood4title">Step 4: Outside of the extractor</string>
+    <string name="hood5title">Step 5: Dry and place the filters</string>
+
+    <string name="hood1text">First, you must remove the filters from the hood to be able
+        to clean them in depth and access the interior to eliminate the remains of grease
+        that may have accumulated over time. They are shaped like a metal mesh and are
+        usually held by a tab and are quite easy to remove. </string>
+    <string name="hood2text">Immerse the filters in a bowl with hot water, soap and a
+        degreasing product for at least an hour to soften the dirt that has accumulated in the grilles.
+        Otherwise, if you prefer to use homemade products you can add lemon juice or white
+        vinegar that are also very effective. When time has elapsed, rub vigorously with a
+        cloth or scourer until all the grease is removed and then rinse them thoroughly with
+        plenty of water.</string>
+    <string name="hood3text">Disconnect the power supply before starting and use a cloth
+        soaked in warm water, soap and degreaser. Rub the entire surface carefully to avoid
+        doing so on the engine and then, with a clean cloth, rinse and remove the soap.</string>
+    <string name="hood4text">The process is the same as for the interior area but it\'s
+        recommended that if you are not sure of the right products for the device, use
+        only soap and water to prevent the material from being affected or damaged.</string>
+    <string name="hood5text">Make sure you dry all the parts well, it is important to
+        prevent fungi from forming or a musty smell. In addition, it is best to do
+        it with paper towels, especially outside to remove watermarks. Once all the
+        parts of the extractor hood have been cleaned and dried, it is time to place
+        the filters, just reassemble them and make sure that the flange has fitted well.
+        Ready, like new!</string>
+
+    <string name="hoodtips">The motor of a cooker hood is a small induction coil motor,
+        which requires next to no maintenance at all. Yet, the motor won’t perform well
+        if you haven’t changed or cleaned your cooker hood filter in some time. Steam
+        and vaporized grease can pass through dirty filters into the motor directly,
+        causing it to cease working. Therefore, the trick to a long-lasting cooker
+        hood motor is proper filter maintenance.</string>
+</resources>
