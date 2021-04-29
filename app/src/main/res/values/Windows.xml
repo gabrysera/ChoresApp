@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="windows1title">Step 1: Remove dirt and dust</string>
+    <string name="windows2title">Step 2: Optional: make homemade glass cleaner</string>
+    <string name="windows3title">Step 3: Spritz generously</string>
+    <string name="windows4title">Step 4: Use a microfiber cloth</string>
+    <string name="windows5title">Step 5: Skip the squeegee</string>
+
+    <string name="windows1text">Sweep dirt from the window frame with a brush or vacuum it
+        up with your machine\'s dusting attachment. This will prevent dirt from turning into
+        a muddy mess when mixed with a cleaner. If your window screen looks especially grimy,
+        pop it out and wash with hot, sudsy water and a soft brush, then rinse and let dry
+        before putting it back. For quickly dusting shades and blinds, it is recommended
+        to go over both sides with a microfiber duster or opening the slats and going over
+        each one with a damp cloth and followed by a dry one.</string>
+    <string name="windows2text">Combine 2 cups of water, 1/2 cup white or cider vinegar and 1/4
+        cup rubbing alcohol (70% concentration) and pour them in a spray bottle. Write the
+        ingredients on the outside of the bottle for safety.</string>
+    <string name="windows3text">Don\'t hold back on the spray, especially if your windows
+        look extra dirty. You need plenty of cleaner to dissolve and suspend the dirt so it
+        can be completely wiped away — skimp and you\'ll be seeing streaks.</string>
+    <string name="windows4text">Some folks like drying panes with newspaper, but you\'re
+        better off reusable microfiber cloths. They are super absorbent, washable, and leave
+        the glass shiny and streak-free. If you rather use paper towels, choose a brand that\'s
+        up to the task. Weak paper towels can shred and leave lint behind.</string>
+    <string name="windows5text">Professional window cleaners swear by them, but you have to
+        know how to use them right. You squeegee down and where does the water go? On the floor.
+        Because of the potential mess and drip factor, try to avoid using squeegees, especially
+        for small panes, but they can be more helpful on bigger, picture windows.</string>
+
+    <string name="windowstips">Tip 1: Always clean windows on a cool day out of direct sunlight to avoid streaks.\n
+        Tip 2: You only need to clean your windows once or twice a year, but it\'s even easier if you divide the
+        job up and do it room by room. \n
+        Tip 3: When you\'re cleaning, wipe one side of the window horizontally and the other vertically. If any
+        streaks do form, you\'ll easily know whether they\'re on the outside or the inside.</string>
+</resources>
