@@ -1,4 +1,4 @@
-#Thu Apr 29 17:15:17 CEST 2021
-base.0=C\:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Mon May 03 11:21:33 CEST 2021
+base.0=C\:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
