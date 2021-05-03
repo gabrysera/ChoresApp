@@ -32,7 +32,5 @@ com/example/all_chores/Page4.java
  com.example.all_chores.Page4$1$1
 com/example/all_chores/ui/main/PlaceholderFragment.java
  com.example.all_chores.ui.main.PlaceholderFragment
- com.example.all_chores.ui.main.PlaceholderFragment$1
 com/example/all_chores/ui/main/PageViewModel.java
  com.example.all_chores.ui.main.PageViewModel
- com.example.all_chores.ui.main.PageViewModel$1
