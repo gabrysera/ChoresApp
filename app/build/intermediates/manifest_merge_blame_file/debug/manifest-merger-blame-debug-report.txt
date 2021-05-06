@@ -11,7 +11,7 @@
 9-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:5:5-22:19
+11-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:5:5-25:19
 12        android:allowBackup="true"
 12-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -25,27 +25,32 @@
 17-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
 18-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:10:9-35
-19        android:theme="@style/Theme.All_Chores" >
-19-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:11:9-48
-20        <activity
-20-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:12:9-21:20
-21            android:name="com.example.all_chores.ChoresInformationMain"
-21-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:13:13-50
-22            android:label="@string/app_name"
-22-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:14:13-45
-23            android:theme="@style/Theme.All_Chores.NoActionBar" >
-23-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:15:13-64
-24            <intent-filter>
-24-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:16:13-20:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:17:17-69
-25-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:17:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:19:17-77
-27-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:19:27-74
-28            </intent-filter>
-29        </activity>
-30    </application>
-31
-32</manifest>
+19        android:testOnly="true"
+20        android:theme="@style/Theme.All_Chores" >
+20-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:11:9-48
+21        <activity android:name="com.example.all_chores.AddTaskView" >
+21-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:12:9-14:20
+21-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:12:19-46
+22        </activity>
+23        <activity
+23-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:15:9-24:20
+24            android:name="com.example.all_chores.CalendarActivity"
+24-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:16:13-45
+25            android:label="@string/app_name"
+25-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:17:13-45
+26            android:theme="@style/Theme.All_Chores.NoActionBar" >
+26-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:18:13-64
+27            <intent-filter>
+27-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:19:13-23:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:20:17-69
+28-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:20:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:22:17-77
+30-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:22:27-74
+31            </intent-filter>
+32        </activity>
+33    </application>
+34
+35</manifest>

@@ -1715,6 +1715,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id TaskDescription
 id Tips
 id accelerate
 id accessibility_action_clickable_span
@@ -1798,8 +1799,14 @@ id beginning
 id blocking
 id bottom
 id bounce
+id button
+id button2
+id button3
+id button4
+id button5
 id buttonPanel
 id cache_measures
+id calendarView
 id cancel_button
 id center
 id center_horizontal
@@ -2220,6 +2227,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout add_task_layout
+layout calendar_layout
 layout chores_information_main
 layout custom_dialog
 layout design_bottom_navigation_item
