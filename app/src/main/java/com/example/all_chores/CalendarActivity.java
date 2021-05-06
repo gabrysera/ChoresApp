@@ -10,26 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-/*
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.CalendarView;
-import android.widget.DatePicker;
-
-import java.util.Calendar;
-import java.util.Date;
-*/
-
-
-
-
 
 
 public class CalendarActivity extends AppCompatActivity {
@@ -39,6 +22,9 @@ public class CalendarActivity extends AppCompatActivity {
     private Button back;
     private Button addTask;
     private String date;
+
+    public static ArrayList<Event> events;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
