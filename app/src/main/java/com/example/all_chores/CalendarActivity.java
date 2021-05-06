@@ -35,11 +35,11 @@ public class CalendarActivity extends AppCompatActivity {
         addTask = (Button) findViewById(R.id.button2);
         Calendar c = Calendar.getInstance();
         StringBuilder s = new StringBuilder();
-        date = setTextEventsButton(Calendar.getInstance().getTime());
+        events = new ArrayList<>();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         String selectedDate = sdf.format(new Date(myCalendarView.getDate()));
+        date = selectedDate;
         seeEvents.setText("events of day: "+selectedDate);
-
         addTask.setText("add task on day: "+selectedDate);
         myCalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override

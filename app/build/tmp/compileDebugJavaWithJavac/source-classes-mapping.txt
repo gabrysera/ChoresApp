@@ -12,6 +12,8 @@ com/example/all_chores/Page5.java
  com.example.all_chores.Page5
  com.example.all_chores.Page5$1
  com.example.all_chores.Page5$1$1
+com/example/all_chores/Event.java
+ com.example.all_chores.Event
 com/example/all_chores/Page2.java
  com.example.all_chores.Page2
  com.example.all_chores.Page2$1

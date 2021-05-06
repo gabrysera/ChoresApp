@@ -1,14 +1,14 @@
 package com.example.all_chores;
 
 public class Event implements Comparable<Event> {
-    private StringBuilder description;
-    private StringBuilder date;
+    private String description;
+    private String date;
     private int year;
     private int month;
     private int day;
     public Event(String description, String date) {
-        this.description = new StringBuilder(description);
-        this.date = new StringBuilder(date);
+        this.description = description;
+        this.date = date;
         this.year = findYear(date);
         this.month = findMonth(date);
         this.day = findDay(date);
@@ -36,19 +36,12 @@ public class Event implements Comparable<Event> {
     }
 
     private int findMonth(String date){
-        String intMonth = (String.valueOf(date.charAt(3)) + String.valueOf(date.charAt(4)));     //substring containing last 4 characters
+        String intMonth = (String.valueOf(date.charAt(3)) + String.valueOf(date.charAt(4)));
         return Integer.parseInt(intMonth);
     }
     private int findDay(String date){
-        String intMonth = (String.valueOf(date.charAt(0)) + String.valueOf(date.charAt(1)));     //substring containing last 4 characters
+        String intMonth = (String.valueOf(date.charAt(0)) + String.valueOf(date.charAt(1)));
         return Integer.parseInt(intMonth);
-    }
-    public void setDescription(StringBuilder description) {
-        this.description = description;
-    }
-
-    public void setDate(StringBuilder date) {
-        this.date = date;
     }
 
     public int getYear() {
