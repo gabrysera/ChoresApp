@@ -64,6 +64,14 @@ public class Event implements Comparable<Event> {
         return Integer.parseInt(intDay);
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
     public int getYear() {
         return year;
     }

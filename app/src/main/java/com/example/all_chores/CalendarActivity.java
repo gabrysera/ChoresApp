@@ -38,8 +38,8 @@ public class CalendarActivity extends AppCompatActivity {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         String selectedDate = sdf.format(new Date(myCalendarView.getDate()));
         date = selectedDate;
-        seeEvents.setText("events of day: "+selectedDate);
-        addTask.setText("add task on day: "+selectedDate);
+        seeEvents.setText("chores of day: "+selectedDate);
+        addTask.setText("add chore on day: "+selectedDate);
         myCalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
@@ -47,8 +47,8 @@ public class CalendarActivity extends AppCompatActivity {
                 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
                 String selectedDate = sdf.format(new Date(year-1900,month,dayOfMonth));
                 date = selectedDate;
-                seeEvents.setText("events of day: " + selectedDate);
-                addTask.setText("add task on day: " + selectedDate);
+                seeEvents.setText("chores of day: " + selectedDate);
+                addTask.setText("add chore on day: " + selectedDate);
             }
         });
     }
