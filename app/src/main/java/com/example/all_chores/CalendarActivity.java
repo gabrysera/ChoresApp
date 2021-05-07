@@ -30,9 +30,9 @@ public class CalendarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calendar_layout);
         myCalendarView = (CalendarView) findViewById(R.id.calendarView);
-        seeEvents = (Button) findViewById(R.id.button3);
-        back = (Button) findViewById(R.id.button);
-        addTask = (Button) findViewById(R.id.button2);
+        seeEvents = (Button) findViewById(R.id.showeventsbutton1);
+        back = (Button) findViewById(R.id.backbuttonfromCalendar);
+        addTask = (Button) findViewById(R.id.addTaskButton1);
         Calendar c = Calendar.getInstance();
         StringBuilder s = new StringBuilder();
         events = new ArrayList<>();
@@ -54,12 +54,16 @@ public class CalendarActivity extends AppCompatActivity {
         });
     }
     public void goToCreateTask(View view){
-
         Intent i = new Intent(this, AddTaskView.class);
         i.putExtra(EXTRA_MESSAGE,date);
         startActivity(i);
     }
 
+    public void goToShowEvent(View view){
+        Intent i = new Intent(this, AddTaskView.class);
+        i.putExtra(EXTRA_MESSAGE,date);
+        startActivity(i);
+    }
 
     private String setTextEventsButton(Date today) {
         String s = new String(today.toString());
@@ -96,5 +100,4 @@ public class CalendarActivity extends AppCompatActivity {
         // only got here if we didn't return false
         return true;
     }
-
 }

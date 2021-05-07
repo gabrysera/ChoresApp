@@ -4,12 +4,12 @@
         "source": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\src\\main\\res\\drawable\\border.xml"
     },
     {
-        "merged": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment5c.xml.flat",
-        "source": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\src\\main\\res\\layout\\fragment5c.xml"
-    },
-    {
         "merged": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment3d.xml.flat",
         "source": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\src\\main\\res\\layout\\fragment3d.xml"
+    },
+    {
+        "merged": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment5c.xml.flat",
+        "source": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\src\\main\\res\\layout\\fragment5c.xml"
     },
     {
         "merged": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment2f.xml.flat",
@@ -102,6 +102,10 @@
     {
         "merged": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment1i.xml.flat",
         "source": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\src\\main\\res\\layout\\fragment1i.xml"
+    },
+    {
+        "merged": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_show_events.xml.flat",
+        "source": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\src\\main\\res\\layout\\show_events.xml"
     },
     {
         "merged": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment4a.xml.flat",

@@ -5,13 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.all_chores.CalendarActivity;
-import com.example.all_chores.R;
 
 import static com.example.all_chores.CalendarActivity.events;
 
@@ -24,9 +20,8 @@ public class AddTaskView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_task_layout);
         Intent intent = getIntent();
-        String date = intent.getStringExtra(CalendarActivity.EXTRA_MESSAGE);
-        this.date = date;
-        dateTextView = (Button) findViewById(R.id.button4);
+        date = intent.getStringExtra(CalendarActivity.EXTRA_MESSAGE);
+        dateTextView = (Button) findViewById(R.id.buttonTitleAddTask);
         dateTextView.setText(date);
         descriptionText = (EditText) findViewById(R.id.TaskDescription);
         setDateTextView(date);

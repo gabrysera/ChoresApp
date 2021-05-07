@@ -12,6 +12,9 @@
         <activity android:name=".AddTaskView">
 
         </activity>
+        <activity android:name=".ShowEvents">
+
+        </activity>
         <activity
             android:name=".CalendarActivity"
             android:label="@string/app_name"

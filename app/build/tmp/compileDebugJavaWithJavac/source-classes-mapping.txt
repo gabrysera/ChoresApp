@@ -1,3 +1,5 @@
+com/example/all_chores/ShowEvents.java
+ com.example.all_chores.ShowEvents
 com/example/all_chores/Page6.java
  com.example.all_chores.Page6
  com.example.all_chores.Page6$1
