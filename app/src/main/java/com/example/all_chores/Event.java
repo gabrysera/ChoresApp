@@ -34,14 +34,34 @@ public class Event implements Comparable<Event> {
         }
         return Integer.parseInt(lastFourDigits);
     }
-
+    // 3/5/2021   12/6/2021 12/12/2021
     private int findMonth(String date){
-        String intMonth = (String.valueOf(date.charAt(3)) + String.valueOf(date.charAt(4)));
+        char c1;
+        char c2;
+        if(date.charAt(3) != '/')
+            c1 = date.charAt(3);
+        else
+            c1 = ' ';
+        if(date.charAt(4) != '/')
+            c2 = date.charAt(4);
+        else
+            c2=' ';
+        String intMonth = (String.valueOf(c1) + String.valueOf(c2));
         return Integer.parseInt(intMonth);
     }
     private int findDay(String date){
-        String intMonth = (String.valueOf(date.charAt(0)) + String.valueOf(date.charAt(1)));
-        return Integer.parseInt(intMonth);
+        char c1;
+        char c2;
+        if(date.charAt(0) != '/')
+            c1 = date.charAt(3);
+        else
+            c1 = ' ';
+        if(date.charAt(1) != '/')
+            c2 = date.charAt(4);
+        else
+            c2=' ';
+        String intDay = (String.valueOf(c1) + String.valueOf(c2));
+        return Integer.parseInt(intDay);
     }
 
     public int getYear() {

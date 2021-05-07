@@ -37,8 +37,7 @@ public class AddTaskView extends AppCompatActivity {
     }
 
     public void addEvent(View view){
-        events.add(new Event(descriptionText.getContentDescription().toString(),date));
-
+        events.add(new Event(descriptionText.getText().toString(),date));
         finish();
     }
 }

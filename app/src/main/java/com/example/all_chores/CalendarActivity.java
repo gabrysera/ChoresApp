@@ -44,10 +44,12 @@ public class CalendarActivity extends AppCompatActivity {
         myCalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
-                month++;
-                seeEvents.setText("events of day: " + dayOfMonth + "/"  + month + "/" +  year);
-                addTask.setText("add task on day: " + dayOfMonth + "/"  + month + "/" +  year);
-                date = dayOfMonth + "/"  + month + "/" +  year;
+
+                SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+                String selectedDate = sdf.format(new Date(year-1900,month,dayOfMonth));
+                date = selectedDate;
+                seeEvents.setText("events of day: " + selectedDate);
+                addTask.setText("add task on day: " + selectedDate);
             }
         });
     }
