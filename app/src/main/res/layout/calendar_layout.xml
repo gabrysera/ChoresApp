@@ -18,7 +18,7 @@
         app:layout_constraintVertical_bias="0.444" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/goBackFromCalendar"
         android:layout_width="85dp"
         android:layout_height="72dp"
         android:layout_marginStart="8dp"
@@ -34,7 +34,7 @@
         android:layout_height="109dp"
         android:onClick="goToCreateTask"
         android:text="Add task"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/goBackFromCalendar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView" />

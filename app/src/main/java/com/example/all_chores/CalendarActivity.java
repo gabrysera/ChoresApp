@@ -22,7 +22,6 @@ public class CalendarActivity extends AppCompatActivity {
     private Button back;
     private Button addTask;
     private String date;
-
     public static ArrayList<Event> events;
 
     @Override
@@ -31,7 +30,7 @@ public class CalendarActivity extends AppCompatActivity {
         setContentView(R.layout.calendar_layout);
         myCalendarView = (CalendarView) findViewById(R.id.calendarView);
         seeEvents = (Button) findViewById(R.id.showeventsbutton1);
-        back = (Button) findViewById(R.id.backbuttonfromCalendar);
+        back = (Button) findViewById(R.id.goBackFromCalendar);
         addTask = (Button) findViewById(R.id.addTaskButton1);
         Calendar c = Calendar.getInstance();
         StringBuilder s = new StringBuilder();
@@ -59,8 +58,8 @@ public class CalendarActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void goToShowEvent(View view){
-        Intent i = new Intent(this, AddTaskView.class);
+   public void goToShowEvent(View view){
+        Intent i = new Intent(this, ShowEvents.class);
         i.putExtra(EXTRA_MESSAGE,date);
         startActivity(i);
     }

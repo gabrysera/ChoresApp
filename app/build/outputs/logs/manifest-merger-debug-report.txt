@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\gabri\.gradle\caches\transforms-2\files-2.1\723282c7994550298e26d567cb0e519b\material-1.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\gabri\.gradle\caches\transforms-2\files-2.1\9570f34841c72a34d773388f89286f55\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\gabri\.gradle\caches\transforms-2\files-2.1\0cb9ff486f5edb59977e253831b932c8\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -40,25 +40,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\gabri\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\gabri\.gradle\caches\transforms-2\files-2.1\7b69e6173655717e69f5c7f6f1302d3b\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\gabri\.gradle\caches\transforms-2\files-2.1\8fe2a3deec1ef3dd659aa5f55d73edd7\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\gabri\.gradle\caches\transforms-2\files-2.1\adf8d4ec58c98f5b37616cb4b06b74f4\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:5:5-25:19
+ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:5:5-28:19
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\gabri\.gradle\caches\transforms-2\files-2.1\723282c7994550298e26d567cb0e519b\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\gabri\.gradle\caches\transforms-2\files-2.1\723282c7994550298e26d567cb0e519b\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\gabri\.gradle\caches\transforms-2\files-2.1\9570f34841c72a34d773388f89286f55\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -81,28 +81,32 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ga
 		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:11:9-48
-activity#com.example.all_chores.AddTaskView
-ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:12:9-14:20
-	android:name
-		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:12:19-46
 activity#com.example.all_chores.CalendarActivity
-ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:15:9-24:20
+ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:12:9-21:20
 	android:label
-		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:17:13-45
+		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:14:13-45
 	android:theme
-		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:18:13-64
+		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:15:13-64
 	android:name
-		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:16:13-45
+		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:13:13-45
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:19:27-74
+activity#com.example.all_chores.AddTaskView
+ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:22:9-24:20
+	android:name
+		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:22:19-46
+activity#com.example.all_chores.ShowEvents
+ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:25:9-27:20
+	android:name
+		ADDED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:25:19-45
 uses-sdk
 INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml
