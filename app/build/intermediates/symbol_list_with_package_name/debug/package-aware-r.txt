@@ -1801,7 +1801,6 @@ id beginning
 id blocking
 id bottom
 id bounce
-id button
 id button5
 id buttonPanel
 id buttonTitleAddTask
@@ -1897,6 +1896,7 @@ id floating
 id forever
 id ghost_view
 id ghost_view_holder
+id goBackFromCalendar
 id gone
 id graph
 id graph_wrap
