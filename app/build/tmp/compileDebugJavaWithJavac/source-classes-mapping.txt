@@ -1,5 +1,5 @@
-com/example/all_chores/ShowEvents.java
- com.example.all_chores.ShowEvents
+com/example/all_chores/ui/main/PageViewModel.java
+ com.example.all_chores.ui.main.PageViewModel
 com/example/all_chores/Page6.java
  com.example.all_chores.Page6
  com.example.all_chores.Page6$1
@@ -22,9 +22,8 @@ com/example/all_chores/Page2.java
  com.example.all_chores.Page2$1$1
 com/example/all_chores/BuildConfig.java
  com.example.all_chores.BuildConfig
-com/example/all_chores/CalendarActivity.java
- com.example.all_chores.CalendarActivity
- com.example.all_chores.CalendarActivity$1
+com/example/all_chores/ui/main/PlaceholderFragment.java
+ com.example.all_chores.ui.main.PlaceholderFragment
 com/example/all_chores/Page1.java
  com.example.all_chores.Page1
  com.example.all_chores.Page1$1
@@ -39,7 +38,8 @@ com/example/all_chores/Page4.java
  com.example.all_chores.Page4
  com.example.all_chores.Page4$1
  com.example.all_chores.Page4$1$1
-com/example/all_chores/ui/main/PlaceholderFragment.java
- com.example.all_chores.ui.main.PlaceholderFragment
-com/example/all_chores/ui/main/PageViewModel.java
- com.example.all_chores.ui.main.PageViewModel
+com/example/all_chores/ShowEvents.java
+ com.example.all_chores.ShowEvents
+com/example/all_chores/CalendarActivity.java
+ com.example.all_chores.CalendarActivity
+ com.example.all_chores.CalendarActivity$1

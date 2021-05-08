@@ -32,8 +32,15 @@ public class ShowEvents extends AppCompatActivity {
         table.setColumnStretchable(0,true);
         for(Event event:CalendarActivity.events){
             if(event.getDate().equals(this.date)){
-                TableRow tr= table.findViewById(R.id.taskRow);
-                ((TextView)tr.findViewById(R.id.textTask)).setText(event.getDescription());
+                TableRow tr= new TableRow(this);
+                tr.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,TableRow.LayoutParams.WRAP_CONTENT));
+                TextView tv = new TextView(this);
+                tv.setText(event.getDescription());
+                tv.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,TableRow.LayoutParams.WRAP_CONTENT));
+                tv.setTextColor(Color.WHITE);
+                tv.setBackgroundColor(Color.BLACK);
+                tr.addView(tv);
+                table.addView(tr);
             }
         }
     }
