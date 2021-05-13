@@ -15,11 +15,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+
 public class ShowEvents extends AppCompatActivity {
     private String date;
     private Button dateTextView;
     private TableLayout table;
-
+    private static ArrayList<Event> events;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +32,8 @@ public class ShowEvents extends AppCompatActivity {
         dateTextView.setText(date);
         table = (TableLayout)findViewById(R.id.tabletask);
         table.setColumnStretchable(0,true);
-        for(Event event:CalendarActivity.events){
-            if(event.getDate().equals(this.date)){
+        events = CalendarActivity.getMyDataBase().getEventsOnDate(date);
+        for(Event event:events){
                 TableRow tr= new TableRow(this);
                 tr.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,TableRow.LayoutParams.WRAP_CONTENT));
                 TextView tv = new TextView(this);
@@ -41,7 +43,6 @@ public class ShowEvents extends AppCompatActivity {
                 tv.setBackgroundColor(Color.BLACK);
                 tr.addView(tv);
                 table.addView(tr);
-            }
         }
     }
 }

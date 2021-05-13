@@ -1,20 +1,26 @@
 package com.example.all_chores;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import static com.example.all_chores.CalendarActivity.events;
 
 public class AddTaskView extends AppCompatActivity {
     private Button dateTextView;
     private EditText descriptionText;
     private String date;
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,14 +31,16 @@ public class AddTaskView extends AppCompatActivity {
         dateTextView.setText(date);
         descriptionText = (EditText) findViewById(R.id.TaskDescription);
         setDateTextView(date);
-    }
 
+    }
     public void setDateTextView(String s){
         dateTextView.setText(s);
     }
 
     public void addEvent(View view){
-        events.add(new Event(descriptionText.getText().toString(),date));
+
+        CalendarActivity.getMyDataBase().addEventToDataBase(descriptionText.getText().toString(),date);
+        //CalendarActivity.getEvents().add(new Event(descriptionText.getText().toString(),date));
         finish();
     }
 }
