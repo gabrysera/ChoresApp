@@ -33,9 +33,9 @@ import java.util.LinkedList;
 import static android.view.WindowManager.*;
 import static android.view.WindowManager.LayoutParams.*;
 
-public class Page1 extends Fragment {
+public class Page1Laundry extends Fragment {
 
-    public Page1() {
+    public Page1Laundry() {
         // required empty public constructor.
     }
 

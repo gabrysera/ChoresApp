@@ -16,7 +16,7 @@ import com.example.all_chores.ui.main.SectionsPagerAdapter;
 
 //import javax.swing.text.View;
 
-public class ChoresInformationMain extends AppCompatActivity {
+public class ChoresInformation extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +27,12 @@ public class ChoresInformationMain extends AppCompatActivity {
 
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
-        sectionsPagerAdapter.addFrag(new Page1(), "Laundry");
-        sectionsPagerAdapter.addFrag(new Page2(), "Dishes");
-        sectionsPagerAdapter.addFrag(new Page3(), "Bathroom");
-        sectionsPagerAdapter.addFrag(new Page4(), "Windows");
-        sectionsPagerAdapter.addFrag(new Page5(), "Gas Stove");
-        sectionsPagerAdapter.addFrag(new Page6(), "Extractor Hood");
+        sectionsPagerAdapter.addFrag(new Page1Laundry(), "Laundry");
+        sectionsPagerAdapter.addFrag(new Page2Dishes(), "Dishes");
+        sectionsPagerAdapter.addFrag(new Page3Bathroom(), "Bathroom");
+        sectionsPagerAdapter.addFrag(new Page4Windows(), "Windows");
+        sectionsPagerAdapter.addFrag(new Page5GasStove(), "Gas Stove");
+        sectionsPagerAdapter.addFrag(new Page6ExtractorHood(), "Extractor Hood");
 
         viewPager.setAdapter(sectionsPagerAdapter);
 

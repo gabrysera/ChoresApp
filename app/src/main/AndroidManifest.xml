@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ChoresInformationMain"
+            android:name=".ChoresInformation"
             android:label="@string/app_name"
             android:theme="@style/Theme.All_Chores.NoActionBar">
             <intent-filter>

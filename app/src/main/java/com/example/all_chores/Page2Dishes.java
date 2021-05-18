@@ -14,9 +14,9 @@ import androidx.fragment.app.Fragment;
 
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
-public class Page5 extends Fragment {
+public class Page2Dishes extends Fragment {
 
-    public Page5() {
+    public Page2Dishes() {
         // required empty public constructor.
     }
 
@@ -28,21 +28,23 @@ public class Page5 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment5, container, false);
+        View view = inflater.inflate(R.layout.fragment2, container, false);
 
         Button one = (Button) view.findViewById(R.id.Button1);
         Button two = (Button) view.findViewById(R.id.Button2);
         Button three = (Button) view.findViewById(R.id.Button3);
         Button four = (Button) view.findViewById(R.id.Button4);
         Button five = (Button) view.findViewById(R.id.Button5);
+        Button six = (Button) view.findViewById(R.id.Button6);
         Button tips = (Button) view.findViewById(R.id.Tips);
 
-        one.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5a, container, false)));
-        two.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5b, container, false)));
-        three.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5c, container, false)));
-        four.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5d, container, false)));
-        five.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5e, container, false)));
-        tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5tips, container, false)));
+        one.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2a, container, false)));
+        two.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2b, container, false)));
+        three.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2c, container, false)));
+        four.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2d, container, false)));
+        five.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2e, container, false)));
+        six.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2f, container, false)));
+        tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2tips, container, false)));
         return view;
     }
 
@@ -64,4 +66,5 @@ public class Page5 extends Fragment {
         };
         return listener;
     }
+
 }

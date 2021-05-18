@@ -14,9 +14,9 @@ import androidx.fragment.app.Fragment;
 
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
-public class Page6 extends Fragment {
+public class Page6ExtractorHood extends Fragment {
 
-    public Page6() {
+    public Page6ExtractorHood() {
         // required empty public constructor.
     }
 

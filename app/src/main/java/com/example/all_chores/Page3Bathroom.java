@@ -1,5 +1,4 @@
 package com.example.all_chores;
-
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -12,11 +11,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+//import com.sun.istack.internal.Nullable;
+
+
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
-public class Page2 extends Fragment {
+public class Page3Bathroom extends Fragment {
 
-    public Page2() {
+    public Page3Bathroom() {
         // required empty public constructor.
     }
 
@@ -28,7 +30,7 @@ public class Page2 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment2, container, false);
+        View view = inflater.inflate(R.layout.fragment3, container, false);
 
         Button one = (Button) view.findViewById(R.id.Button1);
         Button two = (Button) view.findViewById(R.id.Button2);
@@ -36,15 +38,19 @@ public class Page2 extends Fragment {
         Button four = (Button) view.findViewById(R.id.Button4);
         Button five = (Button) view.findViewById(R.id.Button5);
         Button six = (Button) view.findViewById(R.id.Button6);
+        Button seven = (Button) view.findViewById(R.id.Button7);
+        Button eight = (Button) view.findViewById(R.id.Button8);
         Button tips = (Button) view.findViewById(R.id.Tips);
 
-        one.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2a, container, false)));
-        two.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2b, container, false)));
-        three.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2c, container, false)));
-        four.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2d, container, false)));
-        five.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2e, container, false)));
-        six.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2f, container, false)));
-        tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2tips, container, false)));
+        one.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3a, container, false)));
+        two.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3b, container, false)));
+        three.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3c, container, false)));
+        four.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3d, container, false)));
+        five.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3e, container, false)));
+        six.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3f, container, false)));
+        seven.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3g, container, false)));
+        eight.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3h, container, false)));
+        tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3tips, container, false)));
         return view;
     }
 

@@ -14,9 +14,9 @@ import androidx.fragment.app.Fragment;
 
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
-public class Page4 extends Fragment {
+public class Page4Windows extends Fragment {
 
-    public Page4() {
+    public Page4Windows() {
         // required empty public constructor.
     }
 
