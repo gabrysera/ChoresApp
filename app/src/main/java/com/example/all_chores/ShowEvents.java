@@ -35,24 +35,18 @@ public class ShowEvents extends AppCompatActivity {
         table.setColumnStretchable(0,true);
         events = CalendarActivity.getMyDataBase().getEventsOnDate(date);
         for(Event event:events){
-                TableRow tr= new TableRow(this);
-                /*
-                tr.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,TableRow.LayoutParams.WRAP_CONTENT));
-                TextView tv = new TextView(this);
-                tv.setText(event.getDescription());
-                tv.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,TableRow.LayoutParams.WRAP_CONTENT));
-                */
-                TableLayout.LayoutParams tableRowParams= new TableLayout.LayoutParams
-                        (TableLayout.LayoutParams.FILL_PARENT,TableLayout.LayoutParams.WRAP_CONTENT);
-                tableRowParams.setMargins(margins[0],margins[1],margins[2],margins[3]);
-                tr.setLayoutParams(tableRowParams);
-                Button bt = new Button(this);
-                bt.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, 120));
-                bt.setTextColor(Color.WHITE);
-                bt.setBackgroundColor(Color.BLACK);
-                bt.setText(event.getDescription());
-                tr.addView(bt);
-                table.addView(tr);
+            TableRow tr= new TableRow(this);
+            TableLayout.LayoutParams tableRowParams= new TableLayout.LayoutParams
+                    (TableLayout.LayoutParams.FILL_PARENT,TableLayout.LayoutParams.WRAP_CONTENT);
+            tableRowParams.setMargins(margins[0],margins[1],margins[2],margins[3]);
+            tr.setLayoutParams(tableRowParams);
+            Button bt = new Button(this);
+            bt.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, 120));
+            bt.setTextColor(Color.BLACK);
+            bt.setBackgroundColor(Color.RED);
+            bt.setText(event.getDescription());
+            tr.addView(bt);
+            table.addView(tr);
         }
     }
 }
