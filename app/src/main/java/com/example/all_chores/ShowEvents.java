@@ -22,6 +22,7 @@ public class ShowEvents extends AppCompatActivity {
     private Button dateTextView;
     private TableLayout table;
     private static ArrayList<Event> events;
+    private final int[] margins = {10,2,10,2};
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,13 +36,22 @@ public class ShowEvents extends AppCompatActivity {
         events = CalendarActivity.getMyDataBase().getEventsOnDate(date);
         for(Event event:events){
                 TableRow tr= new TableRow(this);
+                /*
                 tr.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,TableRow.LayoutParams.WRAP_CONTENT));
                 TextView tv = new TextView(this);
                 tv.setText(event.getDescription());
                 tv.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,TableRow.LayoutParams.WRAP_CONTENT));
-                tv.setTextColor(Color.WHITE);
-                tv.setBackgroundColor(Color.BLACK);
-                tr.addView(tv);
+                */
+                TableLayout.LayoutParams tableRowParams= new TableLayout.LayoutParams
+                        (TableLayout.LayoutParams.FILL_PARENT,TableLayout.LayoutParams.WRAP_CONTENT);
+                tableRowParams.setMargins(margins[0],margins[1],margins[2],margins[3]);
+                tr.setLayoutParams(tableRowParams);
+                Button bt = new Button(this);
+                bt.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, 120));
+                bt.setTextColor(Color.WHITE);
+                bt.setBackgroundColor(Color.BLACK);
+                bt.setText(event.getDescription());
+                tr.addView(bt);
                 table.addView(tr);
         }
     }
