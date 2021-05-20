@@ -2145,6 +2145,8 @@ id title
 id titleDividerNoCustom
 id titleShowEvents
 id title_template
+id toCalendarPage
+id toInformationPage2
 id toggle
 id top
 id topPanel

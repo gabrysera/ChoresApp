@@ -55,7 +55,7 @@ public class ChoresInformation extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "A house chore can be selected at the top of the page." +
+                Snackbar.make(view, "House chores can be selected at the top." +
                         "Steps or tips are shown when clicked on.", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
