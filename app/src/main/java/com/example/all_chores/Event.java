@@ -2,11 +2,13 @@ package com.example.all_chores;
 
 public class Event implements Comparable<Event> {
     private String description;
+    private String title;
     private String date;
     private int year;
     private int month;
     private int day;
-    public Event(String description, String date) {
+    public Event(String title, String description, String date) {
+        this.title=title;
         this.description = description;
         this.date = date;
         this.year = findYear(date);
@@ -68,8 +70,8 @@ public class Event implements Comparable<Event> {
         return description;
     }
 
-    public String getDate() {
-        return date;
+    public String getTitle() {
+        return title;
     }
 
     public int getYear() {

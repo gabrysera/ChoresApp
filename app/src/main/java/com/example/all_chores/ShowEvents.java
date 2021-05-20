@@ -1,21 +1,18 @@
 package com.example.all_chores;
 
-import android.annotation.SuppressLint;
+
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
-import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
+
+
 
 public class ShowEvents extends AppCompatActivity {
     private String date;
@@ -44,7 +41,7 @@ public class ShowEvents extends AppCompatActivity {
             bt.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, 120));
             bt.setTextColor(Color.BLACK);
             bt.setBackgroundColor(Color.RED);
-            bt.setText(event.getDescription());
+            bt.setText(event.getTitle());
             tr.addView(bt);
             table.addView(tr);
         }

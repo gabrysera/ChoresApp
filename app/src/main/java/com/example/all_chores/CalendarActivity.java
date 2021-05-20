@@ -50,6 +50,7 @@ public class CalendarActivity extends AppCompatActivity {
             }
         });
     }
+
     public void goToCreateTask(View view){
         Intent i = new Intent(this, AddTaskView.class);
         i.putExtra(EXTRA_MESSAGE,date);
