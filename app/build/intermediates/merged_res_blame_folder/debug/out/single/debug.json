@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\layout_chores_information_main.xml.flat",
-        "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\layout\\chores_information_main.xml"
-    },
-    {
         "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
@@ -146,6 +142,10 @@
     {
         "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment1c.xml.flat",
         "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\layout\\fragment1c.xml"
+    },
+    {
+        "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\layout_chores_information.xml.flat",
+        "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\layout\\chores_information.xml"
     },
     {
         "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment4tips.xml.flat",

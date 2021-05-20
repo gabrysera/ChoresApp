@@ -1820,6 +1820,7 @@ id chip1
 id chip2
 id chip3
 id chip_group
+id chores_information_main
 id chronometer
 id circle_center
 id clear_text
@@ -1949,6 +1950,7 @@ id line3
 id linear
 id listMode
 id list_item
+id main
 id masked
 id material_clock_display
 id material_clock_face
@@ -2236,7 +2238,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout add_task_layout
 layout calendar_layout
-layout chores_information_main
+layout chores_information
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

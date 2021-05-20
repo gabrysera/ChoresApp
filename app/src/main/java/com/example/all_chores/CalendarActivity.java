@@ -32,6 +32,13 @@ public class CalendarActivity extends AppCompatActivity {
         myCalendarView = (CalendarView) findViewById(R.id.calendarView);
         seeEvents = (Button) findViewById(R.id.showeventsbutton1);
         back = (Button) findViewById(R.id.goBackFromCalendar);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CalendarActivity.this, MainPage.class);
+                startActivity(intent);
+            }
+        });
         addTask = (Button) findViewById(R.id.addTaskButton1);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         String selectedDate = sdf.format(new Date(myCalendarView.getDate()));
@@ -62,8 +69,6 @@ public class CalendarActivity extends AppCompatActivity {
         i.putExtra(EXTRA_MESSAGE,date);
         startActivity(i);
     }
-
-
 
     public static DataBase getMyDataBase() {
         return myDataBase;
