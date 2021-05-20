@@ -23,25 +23,26 @@ public class DataBase extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(
                 "create table " +EVENTS_TABLE_NAME +
-                        " (_uID " + "INTEGER PRIMARY KEY AUTOINCREMENT, "+ EVENTS_DESCRIPTION_COLUMN +" text,"+ EVENTS_TITLE_COLUMN +" text, "+EVENTS_DATE_COLUMN+ " text)"
+                        " (_uID " + "INTEGER PRIMARY KEY AUTOINCREMENT, "+ EVENTS_TITLE_COLUMN +" text, "+ EVENTS_DESCRIPTION_COLUMN +" text, "+EVENTS_DATE_COLUMN+ " text)"
         );
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS events");
+        db.execSQL("DROP TABLE IF EXISTS "+ EVENTS_TABLE_NAME);
         onCreate(db);
     }
 
     public long addEventToDataBase(String title,String description,String date){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
+        contentValues.put(EVENTS_TITLE_COLUMN, title);
         contentValues.put(EVENTS_DESCRIPTION_COLUMN, description);
         contentValues.put(EVENTS_DATE_COLUMN, date);
         long bb = db.insert(EVENTS_TABLE_NAME, null, contentValues);
         return bb;
     }
-
+//
     public ArrayList<Event> getEventsOnDate (String date){
         ArrayList<Event> eventsOnDay = new ArrayList<>();
         Cursor r = getData(date);

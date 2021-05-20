@@ -19,7 +19,7 @@ public class ShowEvents extends AppCompatActivity {
     private Button dateTextView;
     private TableLayout table;
     private static ArrayList<Event> events;
-    private final int[] margins = {10,2,10,2};
+    private final int[] margins = {10,4,10,4};
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
