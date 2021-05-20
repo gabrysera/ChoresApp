@@ -2127,6 +2127,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2304,6 +2305,7 @@ layout fragment6d
 layout fragment6e
 layout fragment6tips
 layout fragment_main
+layout mainmenu
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

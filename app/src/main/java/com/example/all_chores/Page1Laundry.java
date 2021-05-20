@@ -93,6 +93,5 @@ public class Page1Laundry extends Fragment {
             };
             return listener;
         }
-
     }
 
