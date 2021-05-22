@@ -20,7 +20,7 @@
         android:background="@drawable/see_through"
         android:gravity="center"
         android:text="''A clean home is a happy home.''\n\n\n ''Cleaning and organizing is a practice, not a project.''"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="25dp"
         app:backgroundTint="@color/white" />
 
@@ -36,7 +36,7 @@
         android:background="@drawable/see_through"
         android:gravity="center"
         android:text="''Clean your space, clear your mind.''"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="25dp"
         app:backgroundTint="@color/white" />
 
