@@ -69,8 +69,8 @@ public class MainPage extends AppCompatActivity {
             fab.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Snackbar.make(view, "You can view the calendar or information about house chores." +
-                            "A menu opens using the top left button.", Snackbar.LENGTH_LONG)
+                    Snackbar.make(view, "You can view the calendar or information about house chores " +
+                            "by clicking on the buttons.", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
                 }
             });

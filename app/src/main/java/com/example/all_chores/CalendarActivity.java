@@ -9,6 +9,9 @@ import android.widget.CalendarView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -27,16 +30,26 @@ public class CalendarActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.calendar_layout);
+        setContentView(R.layout.calendar_page);
         myDataBase = new DataBase(this);
         myCalendarView = (CalendarView) findViewById(R.id.calendarView);
         seeEvents = (Button) findViewById(R.id.showeventsbutton1);
-        back = (Button) findViewById(R.id.goBackFromCalendar);
+        back = (Button) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CalendarActivity.this, MainPage.class);
                 startActivity(intent);
+            }
+        });
+        FloatingActionButton fab = findViewById(R.id.fab);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "You can select a day in the calendar and view or add tasks " +
+                        "to that day with the buttons.", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
         addTask = (Button) findViewById(R.id.addTaskButton1);

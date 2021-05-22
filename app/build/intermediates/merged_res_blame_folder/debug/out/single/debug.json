@@ -204,6 +204,10 @@
         "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\layout\\fragment5e.xml"
     },
     {
+        "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_black.png.flat",
+        "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\drawable\\background_black.png"
+    },
+    {
         "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment3f.xml.flat",
         "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\layout\\fragment3f.xml"
     },
@@ -252,6 +256,14 @@
         "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
     },
     {
+        "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\layout_calendar_page.xml.flat",
+        "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\layout\\calendar_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.png.flat",
+        "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\drawable\\background.png"
+    },
+    {
         "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment1f.xml.flat",
         "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\layout\\fragment1f.xml"
     },
@@ -272,6 +284,10 @@
         "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\layout\\fragment2.xml"
     },
     {
+        "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_purple.png.flat",
+        "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\drawable\\background_purple.png"
+    },
+    {
         "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment5d.xml.flat",
         "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\layout\\fragment5d.xml"
     },
@@ -286,6 +302,10 @@
     {
         "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment6.xml.flat",
         "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\layout\\fragment6.xml"
+    },
+    {
+        "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_border.xml.flat",
+        "source": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\src\\main\\res\\drawable\\button_border.xml"
     },
     {
         "merged": "C:\\Users\\Quintine\\AndroidStudioProjects\\All_Chores\\app\\build\\intermediates\\res\\merged\\debug\\layout_show_events.xml.flat",

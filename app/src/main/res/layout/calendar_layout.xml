@@ -5,6 +5,7 @@
     android:id="@+id/backbuttonfromCalendar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_purple"
     tools:context=".CalendarActivity">
 
     <CalendarView
@@ -15,27 +16,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444" />
-
-    <Button
-        android:id="@+id/goBackFromCalendar"
-        android:layout_width="85dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintVertical_bias="0.622" />
 
     <Button
         android:id="@+id/addTaskButton1"
         android:layout_width="170dp"
         android:layout_height="109dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_border"
         android:onClick="goToCreateTask"
         android:text="Add task"
-        app:layout_constraintBottom_toTopOf="@+id/goBackFromCalendar"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView" />
 
@@ -43,9 +37,15 @@
         android:id="@+id/showeventsbutton1"
         android:layout_width="173dp"
         android:layout_height="97dp"
+        android:background="@drawable/button_border"
         android:onClick="goToShowEvent"
+        android:shadowColor="#000000"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/calendarView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.581" />
 </androidx.constraintlayout.widget.ConstraintLayout>
