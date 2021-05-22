@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:background="@drawable/background_1"
+    android:gravity="center"
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/Button1"
@@ -13,7 +14,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:clickable="false"
-        android:text="@string/laundry1title"/>
+        android:text="@string/laundry1title" />
 
     <Button
         android:id="@+id/Button2"
@@ -22,7 +23,8 @@
         android:layout_gravity="left"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="@string/laundry2title"/>
+        android:text="@string/laundry2title" />
+
     <Button
         android:id="@+id/Button3"
         android:layout_width="wrap_content"
@@ -30,7 +32,8 @@
         android:layout_gravity="left"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="@string/laundry3title"/>
+        android:text="@string/laundry3title" />
+
     <Button
         android:id="@+id/Button4"
         android:layout_width="wrap_content"
@@ -38,7 +41,8 @@
         android:layout_gravity="left"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="@string/laundry4title"/>
+        android:text="@string/laundry4title" />
+
     <Button
         android:id="@+id/Button5"
         android:layout_width="wrap_content"
@@ -46,7 +50,8 @@
         android:layout_gravity="left"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="@string/laundry5title"/>
+        android:text="@string/laundry5title" />
+
     <Button
         android:id="@+id/Button6"
         android:layout_width="wrap_content"
@@ -54,7 +59,8 @@
         android:layout_gravity="left"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="@string/laundry6title"/>
+        android:text="@string/laundry6title" />
+
     <Button
         android:id="@+id/Button7"
         android:layout_width="wrap_content"
@@ -62,7 +68,8 @@
         android:layout_gravity="left"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="@string/laundry7title"/>
+        android:text="@string/laundry7title" />
+
     <Button
         android:id="@+id/Button8"
         android:layout_width="wrap_content"
@@ -70,7 +77,8 @@
         android:layout_gravity="left"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="@string/laundry8title"/>
+        android:text="@string/laundry8title" />
+
     <Button
         android:id="@+id/Button9"
         android:layout_width="wrap_content"
@@ -78,7 +86,8 @@
         android:layout_gravity="left"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="@string/laundry9title"/>
+        android:text="@string/laundry9title" />
+
     <Button
         android:id="@+id/Button10"
         android:layout_width="wrap_content"
@@ -86,7 +95,7 @@
         android:layout_gravity="left"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="@string/laundry10title"/>
+        android:text="@string/laundry10title" />
 
     <Button
         android:id="@+id/Tips"

@@ -7,5 +7,4 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="transparant">#75FFFFFF</color> <!-- 99 is for alpha and others pairs zero's are for R G B -->
 </resources>

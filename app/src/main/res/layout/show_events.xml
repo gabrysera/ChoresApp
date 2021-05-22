@@ -3,13 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_3">
 
     <Button
         android:id="@+id/titleShowEvents"
         android:layout_width="359dp"
         android:layout_height="63dp"
+        android:background="@drawable/button_border"
         android:text="Button"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
