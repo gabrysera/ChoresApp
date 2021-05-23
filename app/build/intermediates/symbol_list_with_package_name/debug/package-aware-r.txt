@@ -1671,11 +1671,9 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
-drawable background
 drawable background_1
 drawable background_2
 drawable background_3
-drawable background_black
 drawable background_purple
 drawable border
 drawable btn_checkbox_checked_mtrl
@@ -2092,8 +2090,6 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
-id quotes1
-id quotes2
 id radio
 id ratio
 id rectangles

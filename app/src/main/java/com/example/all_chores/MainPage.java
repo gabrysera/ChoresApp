@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
@@ -25,8 +26,6 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class MainPage extends AppCompatActivity {
 
-        DrawerLayout drawerLayout;
-
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -36,13 +35,13 @@ public class MainPage extends AppCompatActivity {
 
             //viewPager.setAdapter(R.id.main_content);
 
-            drawerLayout = findViewById(R.id.drawer_layout);
-
             Button exit = findViewById(R.id.exit);
             exit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    drawerLayout.openDrawer(GravityCompat.START);
+//                    DrawerLayout drawer = findViewById(R.id.drawer_layout);
+//
+//                        drawer.openDrawer(Gravity.NO_GRAVITY);
                 }
             });
 

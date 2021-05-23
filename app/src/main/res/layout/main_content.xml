@@ -8,50 +8,19 @@
     android:numColumns="2"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/quotes1"
-        android:layout_width="165dp"
-        android:layout_height="306dp"
-        android:layout_row="0"
-        android:layout_rowWeight="1"
-        android:layout_column="0"
-        android:layout_columnWeight="1"
-        android:layout_gravity="center"
-        android:background="@drawable/see_through"
-        android:gravity="center"
-        android:text="''A clean home is a happy home.''\n\n\n ''Cleaning and organizing is a practice, not a project.''"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        app:backgroundTint="@color/white" />
-
-    <TextView
-        android:id="@+id/quotes2"
-        android:layout_width="165dp"
-        android:layout_height="306dp"
-        android:layout_row="0"
-        android:layout_rowWeight="1"
-        android:layout_column="1"
-        android:layout_columnWeight="1"
-        android:layout_gravity="center"
-        android:background="@drawable/see_through"
-        android:gravity="center"
-        android:text="''Clean your space, clear your mind.''"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        app:backgroundTint="@color/white" />
-
     <Button
         android:id="@+id/btn_calender"
         android:layout_width="165dp"
         android:layout_height="165dp"
         android:layout_row="1"
-        android:layout_rowWeight="1"
+        android:layout_rowWeight="0"
         android:layout_column="0"
         android:layout_columnWeight="1"
-        android:layout_gravity="center"
+        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="100dp"
         android:background="@drawable/button_border"
         android:text="Calendar"
+        android:textStyle="bold"
         android:textColor="@color/black"
         app:backgroundTint="@color/black"
         app:icon="@android:drawable/ic_menu_today"
@@ -72,6 +41,7 @@
         android:layout_marginBottom="100dp"
         android:background="@drawable/button_border"
         android:text="Information"
+        android:textStyle="bold"
         android:textColor="@color/black"
         app:backgroundTint="@color/black"
         app:icon="@android:drawable/ic_menu_info_details"
@@ -79,5 +49,4 @@
         app:iconPadding="10dp"
         app:iconSize="50dp"
         app:iconTint="@color/black" />
-
 </GridLayout>
