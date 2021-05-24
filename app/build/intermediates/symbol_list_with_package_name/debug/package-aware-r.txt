@@ -1925,6 +1925,7 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
+id editTextTime
 id edit_query
 id elastic
 id end
@@ -2196,6 +2197,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
+id timePicker1
 id tips
 id title
 id titleDividerNoCustom
@@ -2437,6 +2439,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout time_picker
 menu activity_main_drawer
 mipmap ic_launcher
 mipmap ic_launcher_round

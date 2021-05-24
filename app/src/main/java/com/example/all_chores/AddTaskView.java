@@ -1,9 +1,15 @@
 package com.example.all_chores;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,7 +19,7 @@ public class AddTaskView extends AppCompatActivity {
     private EditText descriptionText;
     private String date;
     private EditText getTitle;
-
+    private EditText getTime;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +29,7 @@ public class AddTaskView extends AppCompatActivity {
         dateTextView = (Button) findViewById(R.id.buttonTitleAddTask);
         dateTextView.setText(date);
         getTitle = (EditText) findViewById(R.id.Title);
+        getTime = (EditText) findViewById(R.id.editTextTime);
         descriptionText = (EditText) findViewById(R.id.TaskDescription);
         setDateTextView(date);
     }
@@ -31,7 +38,15 @@ public class AddTaskView extends AppCompatActivity {
     }
 
     public void addEvent(View view){
-        CalendarActivity.getMyDataBase().addEventToDataBase(getTitle.getText().toString(),descriptionText.getText().toString(),date);
-        finish();
+        if(checkEventTexts(getTime.getText().toString())){
+            CalendarActivity.getMyDataBase().addEventToDataBase(getTitle.getText().toString(),descriptionText.getText().toString(),date,getTime.getText().toString());
+            finish();
+        }
+        else
+            Toast.makeText(getApplicationContext(),"the chosen hour is incorrect, please change your input.", Toast.LENGTH_SHORT).show();
+    }
+
+    public boolean checkEventTexts (String time){
+        return true;
     }
 }

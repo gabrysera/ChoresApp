@@ -30,7 +30,7 @@
         </activity>
         <activity
             android:name="com.example.all_chores.CalendarActivity"
-            android:label="@string/app_name"
+            android:label="Calendar"
             android:theme="@style/Theme.All_Chores.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,6 +47,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.example.all_chores.AddTaskView" >
+        </activity>
+        <activity android:name="com.example.all_chores.ShowEvents" >
         </activity>
     </application>
 

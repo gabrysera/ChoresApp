@@ -13,20 +13,20 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 
 
 public class CalendarActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "date";
-    private CalendarView myCalendarView;
+    private  static CalendarView myCalendarView;
     private Button seeEvents;
     private Button back;
     private Button addTask;
     private String date;
-
+    private Date currentDate;
     static DataBase myDataBase;
+    private final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +53,7 @@ public class CalendarActivity extends AppCompatActivity {
             }
         });
         addTask = (Button) findViewById(R.id.addTaskButton1);
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
         String selectedDate = sdf.format(new Date(myCalendarView.getDate()));
         date = selectedDate;
         seeEvents.setText("chores of day: "+selectedDate);
@@ -81,6 +81,10 @@ public class CalendarActivity extends AppCompatActivity {
         Intent i = new Intent(this, ShowEvents.class);
         i.putExtra(EXTRA_MESSAGE,date);
         startActivity(i);
+    }
+
+    public static CalendarView getMyCalendarView() {
+        return myCalendarView;
     }
 
     public static DataBase getMyDataBase() {

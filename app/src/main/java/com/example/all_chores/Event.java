@@ -1,30 +1,64 @@
 package com.example.all_chores;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Event implements Comparable<Event> {
     private String description;
     private String title;
     private String date;
+    private String time;
+    private static final SimpleDateFormat simpleDateFormat
+            = new SimpleDateFormat("HH:mm:ss");
     private int year;
     private int month;
     private int day;
-    public Event(String title, String description, String date) {
+
+    public Event(String title, String description, String date, String time) {
         this.title=title;
         this.description = description;
         this.date = date;
         this.year = findYear(date);
         this.month = findMonth(date);
         this.day = findDay(date);
+        this.time = time;
     }
 
     @Override
     public int compareTo(Event o) {
-        if(this.year != o.getYear())
-            return this.year - o.getYear();
-        else if (this.month != o.getMonth())
-            return this.month - o.getMonth();
-        else if (this.day != o.getDay())
-            return this.day - o.getDay();
-        return 0;
+        StringBuilder t1 = new StringBuilder(this.time);
+        t1.append (":00");
+        StringBuilder t2 = new StringBuilder(o.time);
+        t1.append (":00");
+        try {
+            Date time1 = simpleDateFormat.parse(t1.toString());
+            Date time2 = simpleDateFormat.parse(t2.toString());
+            long differenceInMilliSeconds
+                    = Math.abs(time2.getTime() - time1.getTime());
+
+            // Calculating the difference in Hours
+            long differenceInHours
+                    = (differenceInMilliSeconds / (60 * 60 * 1000))
+                    % 24;
+
+            // Calculating the difference in Minutes
+            long differenceInMinutes
+                    = (differenceInMilliSeconds / (60 * 1000)) % 60;
+
+            // Calculating the difference in Seconds
+            long differenceInSeconds
+                    = (differenceInMilliSeconds / 1000) % 60;
+            if(differenceInHours != 0)
+                return (int)differenceInHours;
+            else if (differenceInMinutes != 0)
+                return (int) differenceInMinutes;
+            else
+                return 1;
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return 1;
     }
 
     private int findYear(String date){
