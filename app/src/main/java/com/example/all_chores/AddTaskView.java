@@ -9,6 +9,9 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 
 public class AddTaskView extends AppCompatActivity {
     private Button dateTextView;
@@ -16,33 +19,47 @@ public class AddTaskView extends AppCompatActivity {
     private String date;
     private EditText getTitle;
     private EditText getTime;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_task_layout);
         Intent intent = getIntent();
         date = intent.getStringExtra(CalendarActivity.EXTRA_MESSAGE);
-        dateTextView = (Button) findViewById(R.id.Modifytask);
+        dateTextView = (Button) findViewById(R.id.buttonTitleAddTask);
         dateTextView.setText(date);
-        getTitle = (EditText) findViewById(R.id.Titlemodify);
-        getTime = (EditText) findViewById(R.id.editTextTimemodify);
-        descriptionText = (EditText) findViewById(R.id.DescriptionModify);
+        getTitle = (EditText) findViewById(R.id.Title);
+        getTime = (EditText) findViewById(R.id.editTextTime);
+        descriptionText = (EditText) findViewById(R.id.TaskDescription);
         setDateTextView(date);
     }
-    public void setDateTextView(String s){
+
+    public void setDateTextView(String s) {
         dateTextView.setText(s);
     }
 
-    public void addEvent(View view){
-        if(checkEventTexts(getTime.getText().toString())){
-            CalendarActivity.getMyDataBase().addEventToDataBase(getTitle.getText().toString(),descriptionText.getText().toString(),date,getTime.getText().toString());
+    public void addEvent(View view) {
+        if (checkEventTexts(getTime.getText().toString())) {
+            CalendarActivity.getMyDataBase().addEventToDataBase(getTitle.getText().toString(), descriptionText.getText().toString(), date, getTime.getText().toString());
             finish();
-        }
-        else
-            Toast.makeText(getApplicationContext(),"the chosen hour is incorrect, please change your input.", Toast.LENGTH_SHORT).show();
+        } else
+            Toast.makeText(getApplicationContext(), "the chosen format is incorrect, please type the time in this format \"HH:MM\".", Toast.LENGTH_SHORT).show();
     }
 
-    public boolean checkEventTexts (String time){
-        return true;
+    public boolean checkEventTexts(String time) {
+        if (time.length() >= 4 || time.length() <= 5) {
+            Pattern p = Pattern.compile("([01]?[0-9]|2[0-3]):[0-5][0-9]");
+            Matcher m = p.matcher(time);
+            if (m.matches()) {
+                if (time.length() == 4) {
+                    StringBuilder s = new StringBuilder("0");
+                    s.append(time);
+                    getTime.setText(s.toString());
+                }
+                return true;
+            }
+            return false;
+        }
+        return false;
     }
 }

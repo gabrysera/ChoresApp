@@ -7,7 +7,7 @@
     android:background="@drawable/background_3">
 
     <Button
-        android:id="@+id/Modifytask"
+        android:id="@+id/buttonTitleAddTask"
         android:layout_width="313dp"
         android:layout_height="58dp"
         android:layout_marginStart="8dp"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/DescriptionModify"
+        android:id="@+id/TaskDescription"
         android:layout_width="291dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -33,7 +33,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Modifytask"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTitleAddTask"
         app:layout_constraintVertical_bias="0.233" />
 
     <Button
@@ -49,33 +49,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DescriptionModify"
+        app:layout_constraintTop_toBottomOf="@+id/TaskDescription"
         app:layout_constraintVertical_bias="0.575" />
 
     <EditText
-        android:id="@+id/Titlemodify"
+        android:id="@+id/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Title"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/DescriptionModify"
+        app:layout_constraintBottom_toTopOf="@+id/TaskDescription"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Modifytask" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonTitleAddTask" />
 
     <EditText
-        android:id="@+id/editTextTimemodify"
+        android:id="@+id/editTextTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Time"
         android:inputType="time"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DescriptionModify"
-        app:layout_constraintVertical_bias="0.273" />
+        app:layout_constraintTop_toBottomOf="@+id/TaskDescription"
+        app:layout_constraintVertical_bias="0.435" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
