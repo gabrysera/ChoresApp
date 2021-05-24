@@ -36,19 +36,12 @@ public class Event implements Comparable<Event> {
             Date time2 = simpleDateFormat.parse(t2.toString());
             long differenceInMilliSeconds
                     = Math.abs(time2.getTime() - time1.getTime());
-
-            // Calculating the difference in Hours
             long differenceInHours
                     = (differenceInMilliSeconds / (60 * 60 * 1000))
                     % 24;
-
-            // Calculating the difference in Minutes
             long differenceInMinutes
                     = (differenceInMilliSeconds / (60 * 1000)) % 60;
 
-            // Calculating the difference in Seconds
-            long differenceInSeconds
-                    = (differenceInMilliSeconds / 1000) % 60;
             if(differenceInHours != 0)
                 return (int)differenceInHours;
             else if (differenceInMinutes != 0)
