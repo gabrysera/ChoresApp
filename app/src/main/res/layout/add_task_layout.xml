@@ -12,7 +12,7 @@
         android:layout_height="58dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="88dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/button_border"
@@ -34,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonTitleAddTask"
-        app:layout_constraintVertical_bias="0.233" />
+        app:layout_constraintVertical_bias="0.319" />
 
     <Button
         android:id="@+id/button5"
@@ -47,10 +47,9 @@
         app:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TaskDescription"
-        app:layout_constraintVertical_bias="0.575" />
+        app:layout_constraintVertical_bias="0.624" />
 
     <EditText
         android:id="@+id/Title"
@@ -61,8 +60,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/TaskDescription"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonTitleAddTask" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonTitleAddTask"
+        app:layout_constraintVertical_bias="0.715" />
 
     <EditText
         android:id="@+id/editTextTime"
@@ -72,8 +73,9 @@
         android:inputType="time"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TaskDescription"
-        app:layout_constraintVertical_bias="0.435" />
+        app:layout_constraintVertical_bias="0.616" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

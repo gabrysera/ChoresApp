@@ -40,7 +40,7 @@
         </activity>
         <activity
             android:name="com.example.all_chores.ChoresInformation"
-            android:label="@string/app_name"
+            android:label="Chores Information"
             android:theme="@style/Theme.All_Chores.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,11 +48,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.all_chores.AddTaskView" >
+        <activity
+            android:name="com.example.all_chores.AddTaskView"
+            android:label="Add Tasks"
+            android:theme="@style/Theme.All_Chores.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name="com.example.all_chores.ShowEvents" >
+        <activity
+            android:name="com.example.all_chores.ShowEvents"
+            android:label="Events"
+            android:theme="@style/Theme.All_Chores.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name="com.example.all_chores.ModifyEvent" >
+        <activity
+            android:name="com.example.all_chores.ModifyEvent"
+            android:label="Modify Event"
+            android:theme="@style/Theme.All_Chores.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

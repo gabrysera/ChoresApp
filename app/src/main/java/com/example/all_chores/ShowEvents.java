@@ -26,7 +26,7 @@ public class ShowEvents extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.show_events);
+        setContentView(R.layout.show_events_page);
         Intent intent = getIntent();
         dateTextView = (Button) findViewById(R.id.titleShowEvents);
         date = intent.getStringExtra(CalendarActivity.EXTRA_MESSAGE);
@@ -55,6 +55,14 @@ public class ShowEvents extends AppCompatActivity {
             tr.addView(bt);
             table.addView(tr);
         }
+        Button back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ShowEvents.this, CalendarActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void changeActivity(Event event){

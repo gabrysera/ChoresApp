@@ -33,7 +33,7 @@
 
         <activity
             android:name=".ChoresInformation"
-            android:label="@string/app_name"
+            android:label="Chores Information"
             android:theme="@style/Theme.All_Chores.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,14 +41,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".AddTaskView">
+            android:name=".AddTaskView"
+            android:label="Add Tasks"
+            android:theme="@style/Theme.All_Chores.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+
         <activity
-            android:name=".ShowEvents">
+            android:name=".ShowEvents"
+            android:label="Events"
+            android:theme="@style/Theme.All_Chores.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+
         <activity
-            android:name=".ModifyEvent">
+            android:name=".ModifyEvent"
+            android:label="Modify Event"
+            android:theme="@style/Theme.All_Chores.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

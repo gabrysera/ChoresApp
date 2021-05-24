@@ -23,7 +23,7 @@ public class AddTaskView extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_task_layout);
+        setContentView(R.layout.add_task_page);
         Intent intent = getIntent();
         date = intent.getStringExtra(CalendarActivity.EXTRA_MESSAGE);
         dateTextView = (Button) findViewById(R.id.buttonTitleAddTask);
@@ -32,6 +32,14 @@ public class AddTaskView extends AppCompatActivity {
         getTime = (EditText) findViewById(R.id.editTextTime);
         descriptionText = (EditText) findViewById(R.id.TaskDescription);
         setDateTextView(date);
+        Button back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddTaskView.this, CalendarActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void setDateTextView(String s) {

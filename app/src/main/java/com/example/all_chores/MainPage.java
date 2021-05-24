@@ -11,6 +11,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 /*
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -36,13 +37,12 @@ public class MainPage extends AppCompatActivity {
 
             //viewPager.setAdapter(R.id.main_content);
 
-            Button exit = findViewById(R.id.exit);
-            exit.setOnClickListener(new View.OnClickListener() {
+            Button nav_drawer = findViewById(R.id.nav_drawer);
+            nav_drawer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                    DrawerLayout drawer = findViewById(R.id.drawer_layout);
-//
-//                        drawer.openDrawer(Gravity.NO_GRAVITY);
+//                   DrawerLayout drawer = findViewById(R.id.drawer_layout);
+//                   drawer.openDrawer(Gravity.LEFT);
                 }
             });
 

@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainPage"
-    android:id="@+id/main_page">
+    tools:context=".AddTaskView"
+    android:id="@+id/add_task_page">
 
     <com.google.android.material.appbar.AppBarLayout
 
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/nav_drawer"
+                android:id="@+id/back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:shadowColor="#FFFFFF"
@@ -27,7 +27,7 @@
                 android:textColorHighlight="@color/white"
                 android:textColorHint="@color/white"
                 android:textColorLink="@color/white"
-                app:icon="@android:drawable/ic_menu_sort_by_size"
+                app:icon="?attr/actionModeCloseDrawable"
                 app:iconTint="@color/white"
                 app:rippleColor="@color/white"
                 app:strokeColor="#FFFFFF" />
@@ -39,24 +39,16 @@
                 android:layout_centerHorizontal="true"
                 android:minHeight="?actionBarSize"
                 android:padding="@dimen/appbar_padding"
-                android:text="Home"
+                android:text="Add Task"
                 android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
         </LinearLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/main_content"></include>
+    <include layout="@layout/add_task_layout"></include>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_menu_help" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

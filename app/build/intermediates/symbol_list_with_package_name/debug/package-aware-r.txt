@@ -1819,6 +1819,7 @@ id actions
 id activity_chooser_view_content
 id add
 id addTaskButton1
+id add_task_page
 id alertTitle
 id aligned
 id all
@@ -1932,7 +1933,6 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
-id exit
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2058,6 +2058,7 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
+id nav_drawer
 id nav_gallery
 id nav_home
 id nav_host_fragment_container
@@ -2128,6 +2129,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id show_events_page
 id showeventsbutton1
 id sin
 id skipCollapsed
@@ -2173,8 +2175,6 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
-id taskRow
-id taskText
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2297,6 +2297,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout add_task_layout
+layout add_task_page
 layout calendar_layout
 layout calendar_page
 layout chores_information
@@ -2420,11 +2421,11 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout row
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout show_events
+layout show_events_page
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_chip_zero_corner_radius
