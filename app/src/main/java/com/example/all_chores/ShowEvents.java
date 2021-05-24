@@ -31,6 +31,7 @@ public class ShowEvents extends AppCompatActivity {
         dateTextView.setText(date);
         table = (TableLayout)findViewById(R.id.tabletask);
         table.setColumnStretchable(0,true);
+        events = CalendarActivity.getMyDataBase().getEventsOnDate(date);
         Collections.sort(events);
         for(Event event:events){
             TableRow tr= new TableRow(this);

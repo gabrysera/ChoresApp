@@ -28,11 +28,10 @@ com/example/all_chores/Page5GasStove.java
  com.example.all_chores.Page5GasStove$1$1
 com/example/all_chores/BuildConfig.java
  com.example.all_chores.BuildConfig
-com/example/all_chores/CalendarActivity.java
- com.example.all_chores.CalendarActivity
- com.example.all_chores.CalendarActivity$1
- com.example.all_chores.CalendarActivity$2
- com.example.all_chores.CalendarActivity$3
+com/example/all_chores/Page1Laundry.java
+ com.example.all_chores.Page1Laundry
+ com.example.all_chores.Page1Laundry$1
+ com.example.all_chores.Page1Laundry$1$1
 com/example/all_chores/ChoresInformation.java
  com.example.all_chores.ChoresInformation
  com.example.all_chores.ChoresInformation$1
@@ -43,13 +42,14 @@ com/example/all_chores/Page2Dishes.java
  com.example.all_chores.Page2Dishes$1$1
 com/example/all_chores/AddTaskView.java
  com.example.all_chores.AddTaskView
-com/example/all_chores/Page1Laundry.java
- com.example.all_chores.Page1Laundry
- com.example.all_chores.Page1Laundry$1
- com.example.all_chores.Page1Laundry$1$1
 com/example/all_chores/DataBase.java
  com.example.all_chores.DataBase
 com/example/all_chores/Event.java
  com.example.all_chores.Event
 com/example/all_chores/ShowEvents.java
  com.example.all_chores.ShowEvents
+com/example/all_chores/CalendarActivity.java
+ com.example.all_chores.CalendarActivity
+ com.example.all_chores.CalendarActivity$1
+ com.example.all_chores.CalendarActivity$2
+ com.example.all_chores.CalendarActivity$3
