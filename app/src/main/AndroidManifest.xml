@@ -47,6 +47,9 @@
         <activity
             android:name=".ShowEvents">
         </activity>
+        <activity
+            android:name=".ModifyEvent">
+        </activity>
     </application>
 
 </manifest>

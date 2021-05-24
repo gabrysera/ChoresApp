@@ -1751,8 +1751,10 @@ id Button7
 id Button8
 id Button9
 id CTRL
+id DescriptionModify
 id FUNCTION
 id META
+id Modifytask
 id NO_DEBUG
 id SHIFT
 id SHOW_ALL
@@ -1761,9 +1763,8 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
-id TaskDescription
 id Tips
-id Title
+id Titlemodify
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1852,7 +1853,6 @@ id btn_calender
 id btn_information
 id button5
 id buttonPanel
-id buttonTitleAddTask
 id cache_measures
 id calendarView
 id calendar_page
@@ -1925,7 +1925,7 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
-id editTextTime
+id editTextTimemodify
 id edit_query
 id elastic
 id end
@@ -2383,6 +2383,7 @@ layout material_time_input
 layout material_timepicker
 layout material_timepicker_dialog
 layout material_timepicker_textinput_display
+layout modify_events
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title

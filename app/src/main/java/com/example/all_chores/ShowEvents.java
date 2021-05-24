@@ -5,13 +5,14 @@ package com.example.all_chores;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.Nullable;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 
@@ -21,6 +22,7 @@ public class ShowEvents extends AppCompatActivity {
     private TableLayout table;
     private static ArrayList<Event> events;
     private final int[] margins = {14,4,14,4};
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,8 +46,20 @@ public class ShowEvents extends AppCompatActivity {
             bt.setTextColor(Color.BLACK);
             bt.setBackgroundColor(Color.RED);
             bt.setText(event.getTitle());
+            bt.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v)
+                {
+                    changeActivity(event);
+                }
+            });
             tr.addView(bt);
             table.addView(tr);
         }
+    }
+
+    private void changeActivity(Event event){
+        Intent i = new Intent(this,ModifyEvent.class);
+
+        startActivity(i);
     }
 }

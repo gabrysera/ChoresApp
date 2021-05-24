@@ -1,13 +1,9 @@
 package com.example.all_chores;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.CalendarView;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -26,11 +22,11 @@ public class AddTaskView extends AppCompatActivity {
         setContentView(R.layout.add_task_layout);
         Intent intent = getIntent();
         date = intent.getStringExtra(CalendarActivity.EXTRA_MESSAGE);
-        dateTextView = (Button) findViewById(R.id.buttonTitleAddTask);
+        dateTextView = (Button) findViewById(R.id.Modifytask);
         dateTextView.setText(date);
-        getTitle = (EditText) findViewById(R.id.Title);
-        getTime = (EditText) findViewById(R.id.editTextTime);
-        descriptionText = (EditText) findViewById(R.id.TaskDescription);
+        getTitle = (EditText) findViewById(R.id.Titlemodify);
+        getTime = (EditText) findViewById(R.id.editTextTimemodify);
+        descriptionText = (EditText) findViewById(R.id.DescriptionModify);
         setDateTextView(date);
     }
     public void setDateTextView(String s){

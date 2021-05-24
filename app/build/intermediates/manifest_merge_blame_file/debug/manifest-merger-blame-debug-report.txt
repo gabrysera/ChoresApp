@@ -11,7 +11,7 @@
 9-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:5:5-50:19
+11-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:5:5-53:19
 12        android:allowBackup="true"
 12-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -93,6 +93,10 @@
 53-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:47:9-49:20
 53-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:48:13-39
 54        </activity>
-55    </application>
-56
-57</manifest>
+55        <activity android:name="com.example.all_chores.ModifyEvent" >
+55-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:50:9-52:20
+55-->C:\Users\gabri\AndroidStudioProjects\ChoresApp\app\src\main\AndroidManifest.xml:51:13-40
+56        </activity>
+57    </application>
+58
+59</manifest>
