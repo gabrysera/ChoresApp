@@ -1854,6 +1854,8 @@ id btn_information
 id button5
 id buttonPanel
 id buttonTitleAddTask
+id button_delete
+id button_save_changes
 id cache_measures
 id calendarView
 id calendar_page
@@ -1926,7 +1928,11 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
+id editTextDate
+id editTextTextPersonName
+id editTextTextPersonName2
 id editTextTime
+id editTextTime2
 id edit_query
 id elastic
 id end
@@ -1946,6 +1952,7 @@ id fitToContents
 id fixed
 id flip
 id floating
+id floatingActionButton
 id forever
 id fragment_container_view_tag
 id ghost_view

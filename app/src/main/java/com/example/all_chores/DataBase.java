@@ -65,4 +65,13 @@ public class DataBase extends SQLiteOpenHelper {
         Cursor res =  db.rawQuery( "select * from events where date =" + "'"+date+"'", null );
         return res;
     }
+
+    public void deleteData(String title, String description, String date){
+        SQLiteDatabase db = getWritableDatabase();
+        StringBuilder s = new StringBuilder();
+        s.append("DELETE FROM "+EVENTS_TABLE_NAME+" where "+EVENTS_TITLE_COLUMN+ " = "+title+
+        " and "+ EVENTS_DESCRIPTION_COLUMN+" = "+description+ " and "+ EVENTS_DATE_COLUMN+" = "+ date);
+        db.execSQL(s.toString());
+    }
 }
+//DELETE FROM events where title = '1' and description = '11' and date = '01/05/2021'

@@ -36,16 +36,17 @@ public class MainPage extends AppCompatActivity {
             //ViewPager viewPager = findViewById(R.id.view_pager);
 
             //viewPager.setAdapter(R.id.main_content);
-
-            Button nav_drawer = findViewById(R.id.nav_drawer);
-            nav_drawer.setOnClickListener(new View.OnClickListener() {
+/*
+            Button exit = findViewById(R.id.exit);
+            exit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                   DrawerLayout drawer = findViewById(R.id.drawer_layout);
-//                   drawer.openDrawer(Gravity.LEFT);
+                    DrawerLayout drawer = findViewById(R.id.drawer_layout);
+
+                       drawer.openDrawer(Gravity.NO_GRAVITY);
                 }
             });
-
+*/
             Button calendar = findViewById(R.id.btn_calender);
             calendar.setOnClickListener(new View.OnClickListener() {
                 @Override

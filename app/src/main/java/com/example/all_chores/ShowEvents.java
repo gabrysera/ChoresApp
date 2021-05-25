@@ -22,7 +22,7 @@ public class ShowEvents extends AppCompatActivity {
     private TableLayout table;
     private static ArrayList<Event> events;
     private final int[] margins = {14,4,14,4};
-
+    public static Event event;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,7 +67,7 @@ public class ShowEvents extends AppCompatActivity {
 
     private void changeActivity(Event event){
         Intent i = new Intent(this,ModifyEvent.class);
-
+        this.event=event;
         startActivity(i);
     }
 }
