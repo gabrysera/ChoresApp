@@ -54,7 +54,7 @@ public class AddTaskView extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "the chosen format is incorrect, please type the time in this format \"HH:MM\".", Toast.LENGTH_SHORT).show();
     }
 
-    public boolean checkEventTexts(String time) {
+    private boolean checkEventTexts(String time) {
         if (time.length() >= 4 || time.length() <= 5) {
             Pattern p = Pattern.compile("([01]?[0-9]|2[0-3]):[0-5][0-9]");
             Matcher m = p.matcher(time);

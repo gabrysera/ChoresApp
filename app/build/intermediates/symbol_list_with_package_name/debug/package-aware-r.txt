@@ -1751,6 +1751,7 @@ id Button7
 id Button8
 id Button9
 id CTRL
+id ChangeDate
 id FUNCTION
 id META
 id NO_DEBUG
@@ -1865,6 +1866,9 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id changeTime
+id changeTitle
+id change_description
 id checkbox
 id checked
 id chip
@@ -1928,11 +1932,7 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
-id editTextDate
-id editTextTextPersonName
-id editTextTextPersonName2
 id editTextTime
-id editTextTime2
 id edit_query
 id elastic
 id end

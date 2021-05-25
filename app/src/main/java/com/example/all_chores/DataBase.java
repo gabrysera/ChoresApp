@@ -69,8 +69,8 @@ public class DataBase extends SQLiteOpenHelper {
     public void deleteData(String title, String description, String date){
         SQLiteDatabase db = getWritableDatabase();
         StringBuilder s = new StringBuilder();
-        s.append("DELETE FROM "+EVENTS_TABLE_NAME+" where "+EVENTS_TITLE_COLUMN+ " = "+title+
-        " and "+ EVENTS_DESCRIPTION_COLUMN+" = "+description+ " and "+ EVENTS_DATE_COLUMN+" = "+ date);
+        s.append("DELETE FROM "+EVENTS_TABLE_NAME+" where "+EVENTS_TITLE_COLUMN+ " = "+"'"+title+"'"+
+        " and "+ EVENTS_DESCRIPTION_COLUMN+" = "+"'"+description+"'"+ " and "+ EVENTS_DATE_COLUMN+" = "+ "'"+date+"'");
         db.execSQL(s.toString());
     }
 }
