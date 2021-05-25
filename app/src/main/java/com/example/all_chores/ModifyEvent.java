@@ -44,7 +44,6 @@ public class ModifyEvent extends AppCompatActivity {
         changeTimeText = (EditText)findViewById(R.id.changeTime);
         changeTimeText.setText(event.getTime());
         setListeners();
-
     }
     private void setListeners(){
         buttonDelete.setOnClickListener(new View.OnClickListener() {

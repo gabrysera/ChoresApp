@@ -324,6 +324,10 @@
         "source": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\src\\main\\res\\layout\\fragment3tips.xml"
     },
     {
+        "merged": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment1prova.xml.flat",
+        "source": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\src\\main\\res\\layout\\fragment1prova.xml"
+    },
+    {
         "merged": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment6b.xml.flat",
         "source": "C:\\Users\\gabri\\AndroidStudioProjects\\ChoresApp\\app\\src\\main\\res\\layout\\fragment6b.xml"
     },
