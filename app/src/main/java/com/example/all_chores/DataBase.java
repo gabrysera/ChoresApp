@@ -73,5 +73,15 @@ public class DataBase extends SQLiteOpenHelper {
         " and "+ EVENTS_DESCRIPTION_COLUMN+" = "+"'"+description+"'"+ " and "+ EVENTS_DATE_COLUMN+" = "+ "'"+date+"'");
         db.execSQL(s.toString());
     }
+    public void changeData(String title, String description, String date, String newTitle,
+                           String newDescription, String newDate, String newTime){
+        SQLiteDatabase db = getWritableDatabase();
+        StringBuilder s = new StringBuilder();
+        s.append("UPDATE "+EVENTS_TABLE_NAME+" SET "+EVENTS_TITLE_COLUMN +" = '"+ newTitle + "', "+
+                EVENTS_DATE_COLUMN + " = '"+ newDate + "', "+ EVENTS_DESCRIPTION_COLUMN +" = '"+newDescription+
+                "', "+EVENTS_TIME_COLUMN + " = '" + newTime+
+                "' where "+EVENTS_TITLE_COLUMN+ " = "+"'"+title+"'"+
+                " and "+ EVENTS_DESCRIPTION_COLUMN+" = "+"'"+description+"'"+ " and "+ EVENTS_DATE_COLUMN+" = "+ "'"+date+"'");
+        db.execSQL(s.toString());
+    }
 }
-//DELETE FROM events where title = '1' and description = '11' and date = '01/05/2021'
