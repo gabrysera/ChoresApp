@@ -66,14 +66,14 @@ public class ModifyEvent extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(delete){
-                    CalendarActivity.getMyDataBase().deleteData(event.getTitle(),event.getDescription(),event.getDate());
+                   deleteEvent();
                 }
                 else{
                     if(checkTimeAndDate(changeTimeText.getText().toString(),changeDateText.getText().toString())){
-                        changeTime(changeTimeText.getText().toString());
-                        changeDate(changeDateText.getText().toString());
-                        changeTitle(changeTitleText.getText().toString());
-                        changeDescription(changeDescriptionText.getText().toString());
+                        changeEventPar(changeTitleText.getText().toString(),
+                                changeDescriptionText.getText().toString(),
+                                changeDateText.getText().toString(),
+                                changeTimeText.getText().toString());
                     }
                 }
                 finish();
@@ -84,18 +84,10 @@ public class ModifyEvent extends AppCompatActivity {
         CalendarActivity.getMyDataBase().deleteData(event.getTitle(),event.getDescription(),event.getDate());
     }
 
-    public void changeTime(String t){
-        event.setTime(t);
+    public void changeEventPar(String title,String des, String date, String time){
+
     }
-    public void changeTitle(String t){
-        event.setTitle(t);
-    }
-    public void changeDescription(String des){
-        event.setTitle(des);
-    }
-    public void changeDate(String date){
-        event.setDate(date);
-    }
+
     private boolean checkTimeAndDate(String time,String Date){
         if (time.length() >= 4 || time.length() <= 5) {
             Pattern p = Pattern.compile("([01]?[0-9]|2[0-3]):[0-5][0-9]");
