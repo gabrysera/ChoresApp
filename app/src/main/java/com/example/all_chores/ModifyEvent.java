@@ -84,7 +84,7 @@ public class ModifyEvent extends AppCompatActivity {
     }
 
     public void changeEventPar(String title,String des, String date, String time){
-
+        CalendarActivity.getMyDataBase().changeData(event.getTitle(),event.getDescription(),event.getDate(),title,des,date,time);
     }
 
     private boolean checkTimeAndDate(String time,String Date){

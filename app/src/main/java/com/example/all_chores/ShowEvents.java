@@ -11,7 +11,6 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.Nullable;
-
 import java.util.ArrayList;
 import java.util.Collections;
 
