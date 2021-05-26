@@ -61,12 +61,14 @@ public class ShowEvents extends AppCompatActivity {
                 Intent intent = new Intent(ShowEvents.this, CalendarActivity.class);
                 startActivity(intent);
             }
+
         });
     }
 
     private void changeActivity(Event event){
         Intent i = new Intent(this,ModifyEvent.class);
         this.event=event;
+        int c = 0;
         startActivity(i);
     }
 }
