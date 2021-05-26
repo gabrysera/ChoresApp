@@ -82,7 +82,7 @@ public class ShowEvents extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "You can view detailed information or modify a scheduled chore " +
+                Snackbar.make(view, "You can modify a scheduled chore " +
                         "by clicking on it.", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
