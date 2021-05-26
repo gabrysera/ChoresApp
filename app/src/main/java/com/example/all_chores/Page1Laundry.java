@@ -57,8 +57,6 @@ public class Page1Laundry extends Fragment {
         Button six = (Button) view.findViewById(R.id.Button6);
         Button seven = (Button) view.findViewById(R.id.Button7);
         Button eight = (Button) view.findViewById(R.id.Button8);
-        Button nine = (Button) view.findViewById(R.id.Button9);
-        Button ten = (Button) view.findViewById(R.id.Button10);
         Button tips = (Button) view.findViewById(R.id.Tips);
 
         one.setOnClickListener(getListener(inflater.inflate(R.layout.fragment1a, container, false)));
@@ -69,29 +67,27 @@ public class Page1Laundry extends Fragment {
         six.setOnClickListener(getListener(inflater.inflate(R.layout.fragment1f, container, false)));
         seven.setOnClickListener(getListener(inflater.inflate(R.layout.fragment1g, container, false)));
         eight.setOnClickListener(getListener(inflater.inflate(R.layout.fragment1h, container, false)));
-        nine.setOnClickListener(getListener(inflater.inflate(R.layout.fragment1i, container, false)));
-        ten.setOnClickListener(getListener(inflater.inflate(R.layout.fragment1j, container, false)));
         tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment1tips, container, false)));
         return view;
     }
 
-        public View.OnClickListener getListener (View view) {
-            View.OnClickListener listener = new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    PopupWindow pw = new PopupWindow(view, WRAP_CONTENT, WRAP_CONTENT);
-                    pw.showAtLocation(view, Gravity.CENTER, 0, 0);
-                    Button close = (Button) view.findViewById(R.id.closeButton);
+    public View.OnClickListener getListener (View view) {
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupWindow pw = new PopupWindow(view, WRAP_CONTENT, WRAP_CONTENT);
+                pw.showAtLocation(view, Gravity.CENTER, 0, 0);
 
-                    close.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            pw.dismiss();
-                        }
-                    });
-                }
-            };
-            return listener;
-        }
+                Button close = (Button) view.findViewById(R.id.closeButton);
+                close.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        pw.dismiss();
+                    }
+                });
+            }
+        };
+        return listener;
     }
+}
 
