@@ -26,12 +26,15 @@ public class ModifyEvent extends AppCompatActivity {
     private EditText changeDateText;
     private EditText changeTimeText;
     public int color;
+    private int but;
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modify_events);
         this.event = ShowEvents.event;
         delete = false;
+        Intent intent = getIntent();
+        but = intent.getIntExtra("int",0);
         color = ContextCompat.getColor(this, R.color.purple_500);
         buttonChange = (Button) findViewById(R.id.button_save_changes);
         buttonDelete = (Button) findViewById(R.id.button_delete);
@@ -65,6 +68,7 @@ public class ModifyEvent extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(delete){
+                    ShowEvents.deleteButton(but);
                    deleteEvent();
                 }
                 else{

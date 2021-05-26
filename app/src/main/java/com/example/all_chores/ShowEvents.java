@@ -13,15 +13,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Hashtable;
 
 
 public class ShowEvents extends AppCompatActivity {
     private String date;
     private Button dateTextView;
-    private TableLayout table;
+    public static TableLayout table;
     private static ArrayList<Event> events;
     private final int[] margins = {14,4,14,4};
     public static Event event;
+    private Hashtable<Button, Integer> numbers;
+    private int c;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +37,8 @@ public class ShowEvents extends AppCompatActivity {
         table.setColumnStretchable(0,true);
         events = CalendarActivity.getMyDataBase().getEventsOnDate(date);
         Collections.sort(events);
+        c=0;
+        numbers = new Hashtable<Button,Integer>();
         for(Event event:events){
             TableRow tr= new TableRow(this);
             TableLayout.LayoutParams tableRowParams= new TableLayout.LayoutParams
@@ -41,6 +46,7 @@ public class ShowEvents extends AppCompatActivity {
             tableRowParams.setMargins(margins[0],margins[1],margins[2],margins[3]);
             tr.setLayoutParams(tableRowParams);
             Button bt = new Button(this);
+            numbers.put(bt,c);
             bt.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, 100));
             bt.setTextColor(Color.BLACK);
             bt.setBackgroundColor(Color.RED);
@@ -48,27 +54,35 @@ public class ShowEvents extends AppCompatActivity {
             bt.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v)
                 {
-                    changeActivity(event);
+                    changeActivity(event,bt);
                 }
             });
             tr.addView(bt);
             table.addView(tr);
+            c++;
         }
         Button back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                /*
                 Intent intent = new Intent(ShowEvents.this, CalendarActivity.class);
                 startActivity(intent);
+                */
+                 finish();
             }
 
         });
     }
 
-    private void changeActivity(Event event){
+    private void changeActivity(Event event,Button button){
         Intent i = new Intent(this,ModifyEvent.class);
         this.event=event;
-        int c = 0;
+        i.putExtra("int",numbers.get(button));
         startActivity(i);
+    }
+
+    public static void deleteButton(int c){
+        table.removeViewAt(c);
     }
 }

@@ -15,8 +15,6 @@ import android.widget.Button;
 
 import com.example.all_chores.ui.main.SectionsPagerAdapter;
 
-//import javax.swing.text.View;
-
 public class ChoresInformation extends AppCompatActivity {
 
     @Override

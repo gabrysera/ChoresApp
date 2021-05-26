@@ -81,24 +81,6 @@
         android:text="@string/laundry8title" />
 
     <Button
-        android:id="@+id/Button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="@string/laundry9title" />
-
-    <Button
-        android:id="@+id/Button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="@string/laundry10title" />
-
-    <Button
         android:id="@+id/Tips"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
