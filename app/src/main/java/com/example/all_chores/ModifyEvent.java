@@ -88,6 +88,7 @@ public class ModifyEvent extends AppCompatActivity {
     }
 
     private boolean checkTimeAndDate(String time,String Date){
+        int i =0;
         if (time.length() >= 4 || time.length() <= 5) {
             Pattern p = Pattern.compile("([01]?[0-9]|2[0-3]):[0-5][0-9]");
             Matcher m = p.matcher(time);
@@ -96,6 +97,7 @@ public class ModifyEvent extends AppCompatActivity {
                     StringBuilder s = new StringBuilder("0");
                     s.append(time);
                     changeTimeText.setText(s.toString());
+                    //try
                 }
                 return true;
             }
