@@ -1741,7 +1741,6 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id Button1
-id Button10
 id Button2
 id Button3
 id Button4
@@ -1749,7 +1748,6 @@ id Button5
 id Button6
 id Button7
 id Button8
-id Button9
 id CTRL
 id ChangeDate
 id FUNCTION
@@ -1991,7 +1989,6 @@ id jumpToStart
 id labelGroup
 id labeled
 id largeLabel
-id laundry10title
 id laundry1title
 id laundry2title
 id laundry3title
@@ -2000,7 +1997,6 @@ id laundry5title
 id laundry6title
 id laundry7title
 id laundry8title
-id laundry9title
 id layout
 id left
 id leftToRight
@@ -2333,8 +2329,6 @@ layout fragment1e
 layout fragment1f
 layout fragment1g
 layout fragment1h
-layout fragment1i
-layout fragment1j
 layout fragment1prova
 layout fragment1tips
 layout fragment2
@@ -2539,8 +2533,6 @@ string hood5title
 string hoodtips
 string icon_content_description
 string item_view_role_description
-string laundry10text
-string laundry10title
 string laundry1text
 string laundry1title
 string laundry2text
@@ -2557,8 +2549,6 @@ string laundry7text
 string laundry7title
 string laundry8text
 string laundry8title
-string laundry9text
-string laundry9title
 string laundrytips
 string material_clock_display_divider
 string material_clock_toggle_content_description
