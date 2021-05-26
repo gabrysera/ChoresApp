@@ -9,6 +9,9 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -40,6 +43,16 @@ public class AddTaskView extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        FloatingActionButton fab = findViewById(R.id.fab);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "You can specify the title, description and time of the chore " +
+                        "and add it to your calendar with the button.", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
     }
 
     public void setDateTextView(String s) {
@@ -51,7 +64,7 @@ public class AddTaskView extends AppCompatActivity {
             CalendarActivity.getMyDataBase().addEventToDataBase(getTitle.getText().toString(), descriptionText.getText().toString(), date, getTime.getText().toString());
             finish();
         } else
-            Toast.makeText(getApplicationContext(), "the chosen format is incorrect, please type the time in this format \"HH:MM\".", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "The chosen format is incorrect, please type the time in this format \"HH:MM\".", Toast.LENGTH_SHORT).show();
     }
 
     private boolean checkEventTexts(String time) {

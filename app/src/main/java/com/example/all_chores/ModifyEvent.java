@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.example.all_chores.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -80,6 +82,16 @@ public class ModifyEvent extends AppCompatActivity {
                     }
                 }
                 finish();
+            }
+        });
+        FloatingActionButton fab = findViewById(R.id.fab);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Modify the chore and save changes, " +
+                        "or delete it by clicking the left button and then save changes.", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
     }

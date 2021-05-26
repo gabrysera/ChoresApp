@@ -11,6 +11,10 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.Nullable;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Hashtable;
@@ -72,6 +76,16 @@ public class ShowEvents extends AppCompatActivity {
                  finish();
             }
 
+        });
+        FloatingActionButton fab = findViewById(R.id.fab);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "You can view detailed information or modify a scheduled chore " +
+                        "by clicking on it.", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
         });
     }
 
