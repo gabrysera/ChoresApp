@@ -23,7 +23,7 @@ import java.util.Hashtable;
 public class ShowEvents extends AppCompatActivity {
     private String date;
     private Button dateTextView;
-    public static TableLayout table;
+    private static TableLayout table;
     private static ArrayList<Event> events;
     private final int[] margins = {14,4,14,4};
     public static Event event;
@@ -37,9 +37,10 @@ public class ShowEvents extends AppCompatActivity {
         dateTextView = (Button) findViewById(R.id.titleShowEvents);
         date = intent.getStringExtra(CalendarActivity.EXTRA_MESSAGE);
         dateTextView.setText(date);
+
+        events = CalendarActivity.getMyDataBase().getEventsOnDate(date);
         table = (TableLayout)findViewById(R.id.tabletask);
         table.setColumnStretchable(0,true);
-        events = CalendarActivity.getMyDataBase().getEventsOnDate(date);
         Collections.sort(events);
         c=0;
         numbers = new Hashtable<Button,Integer>();
@@ -65,6 +66,7 @@ public class ShowEvents extends AppCompatActivity {
             table.addView(tr);
             c++;
         }
+
         Button back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,5 +100,9 @@ public class ShowEvents extends AppCompatActivity {
 
     public static void deleteButton(int c){
         table.removeViewAt(c);
+    }
+
+    public static void changeButton(int c,String s){
+        ((Button)(((TableRow)table.getChildAt(c)).getChildAt(0))).setText(s);
     }
 }

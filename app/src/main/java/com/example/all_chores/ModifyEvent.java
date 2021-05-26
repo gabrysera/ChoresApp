@@ -79,6 +79,7 @@ public class ModifyEvent extends AppCompatActivity {
                                 changeDescriptionText.getText().toString(),
                                 changeDateText.getText().toString(),
                                 changeTimeText.getText().toString());
+                        ShowEvents.changeButton(but,changeTitleText.getText().toString());
                     }
                 }
                 finish();

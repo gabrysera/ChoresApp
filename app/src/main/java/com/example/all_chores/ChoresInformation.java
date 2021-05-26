@@ -21,11 +21,8 @@ public class ChoresInformation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chores_information);
-
         ViewPager viewPager = findViewById(R.id.view_pager);
-
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-
         sectionsPagerAdapter.addFrag(new Page1Laundry(), "Laundry");
         sectionsPagerAdapter.addFrag(new Page2Dishes(), "Dishes");
         sectionsPagerAdapter.addFrag(new Page3Bathroom(), "Bathroom");

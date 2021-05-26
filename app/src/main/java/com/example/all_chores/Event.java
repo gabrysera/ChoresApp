@@ -43,9 +43,9 @@ public class Event implements Comparable<Event> {
                     = (differenceInMilliSeconds / (60 * 1000)) % 60;
 
             if(differenceInHours != 0)
-                return (int)differenceInHours;
+                return (int)-differenceInHours;
             else if (differenceInMinutes != 0)
-                return (int) differenceInMinutes;
+                return (int) -differenceInMinutes;
             else
                 return 1;
         } catch (ParseException e) {
