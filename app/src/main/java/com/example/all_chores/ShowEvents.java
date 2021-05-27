@@ -29,6 +29,7 @@ public class ShowEvents extends AppCompatActivity {
     public static Event event;
     private Hashtable<Button, Integer> numbers;
     private int c;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

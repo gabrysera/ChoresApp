@@ -84,6 +84,7 @@ public class ModifyEvent extends AppCompatActivity {
                         event.setDate(changeDateText.getText().toString());
                         event.setTime(changeTimeText.getText().toString());
                         event.setDescription(changeDescriptionText.getText().toString());
+                        event.setTitle(changeTitleText.getText().toString());
                     }
                     else
                         Toast.makeText(getApplicationContext(), "The chosen format is incorrect, please type the time in this format \"HH:MM\".", Toast.LENGTH_LONG).show();
