@@ -1937,6 +1937,8 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id events1
+id events2
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2060,10 +2062,12 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nav_calendar
 id nav_controller_view_tag
 id nav_drawer
 id nav_home
 id nav_host_fragment_container
+id nav_information
 id nav_view
 id navigation_header_container
 id never

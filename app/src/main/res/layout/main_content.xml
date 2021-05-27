@@ -8,6 +8,36 @@
     android:numColumns="2"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/events1"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_column="0"
+        android:textSize="30dp"
+        android:text="left"
+        android:gravity="right|center_vertical"
+        android:layout_margin="5dp"
+        android:layout_gravity="right|center_vertical">
+    </TextView>
+
+    <TextView
+        android:id="@+id/events2"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_column="1"
+        android:textSize="30dp"
+        android:text="right"
+        android:layout_margin="5dp"
+        android:gravity="left|center_vertical"
+        android:layout_gravity="left|center_vertical">
+    </TextView>
+
     <Button
         android:id="@+id/btn_calender"
         android:layout_width="165dp"

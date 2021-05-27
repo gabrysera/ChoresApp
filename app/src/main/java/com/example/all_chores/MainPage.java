@@ -7,6 +7,7 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -26,6 +27,9 @@ import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MainPage extends AppCompatActivity {
 
@@ -75,5 +79,24 @@ public class MainPage extends AppCompatActivity {
                             .setAction("Action", null).show();
                 }
             });
+            eventsOfDay();
+        }
+
+        public void eventsOfDay() {
+            int no_tasks = 0;
+            //Now date is set to the current date, so that we can use that to search for instances
+            //in the database where this is equal to.
+            //I'm not sure though how the date is saved in the database, so I'm not sure whether this
+            //can be used this way.
+            Date today = new Date();
+            SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/YYYY");
+            String date_today = formatter.format(today);
+
+            //count nr of tasks where date is equal to date_today and set no_tasks equal to that amount.
+
+            TextView left = findViewById(R.id.events1);
+            TextView right = findViewById(R.id.events2);
+            left.setText("You have\nplanned");
+            right.setText(no_tasks+" tasks\nfor today.");
         }
 }
