@@ -1,5 +1,6 @@
 package com.example.all_chores;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -12,9 +13,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 public class Page2Dishes extends Fragment {
+    private FloatingActionButton floatingActionButton1;
 
     public Page2Dishes() {
         // required empty public constructor.
@@ -45,6 +49,15 @@ public class Page2Dishes extends Fragment {
         five.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2e, container, false)));
         six.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2f, container, false)));
         tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2tips, container, false)));
+        floatingActionButton1 = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
+        floatingActionButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Page2Dishes.this.getActivity(),CalendarActivity.class);
+                intent.putExtra(CalendarActivity.EXTRA_MESSAGE_TITLE,"Dishes");
+                startActivity(intent);
+            }
+        });
         return view;
     }
 

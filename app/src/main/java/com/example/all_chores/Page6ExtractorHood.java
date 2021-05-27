@@ -1,5 +1,6 @@
 package com.example.all_chores;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -12,9 +13,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 public class Page6ExtractorHood extends Fragment {
+    private FloatingActionButton floatingActionButton1;
 
     public Page6ExtractorHood() {
         // required empty public constructor.
@@ -43,6 +47,15 @@ public class Page6ExtractorHood extends Fragment {
         four.setOnClickListener(getListener(inflater.inflate(R.layout.fragment6d, container, false)));
         five.setOnClickListener(getListener(inflater.inflate(R.layout.fragment6e, container, false)));
         tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment6tips, container, false)));
+        floatingActionButton1 = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
+        floatingActionButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Page6ExtractorHood.this.getActivity(),CalendarActivity.class);
+                intent.putExtra(CalendarActivity.EXTRA_MESSAGE_TITLE,"Extractor Hood");
+                startActivity(intent);
+            }
+        });
         return view;
     }
 

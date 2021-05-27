@@ -39,8 +39,12 @@ public class ChoresInformation extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ChoresInformation.this, MainPage.class);
+                /*
+                Intent intent = new Intent(CalendarActivity.this, MainPage.class);
                 startActivity(intent);
+
+                 */
+                finish();
             }
         });
 
@@ -49,8 +53,8 @@ public class ChoresInformation extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "You can select a house chore at the top " +
-                        "and view detailed steps and tips by clicking the buttons.", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "View detailed steps and tips by clicking the purple buttons or " +
+                        "add it to the calendar with the plus.", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });

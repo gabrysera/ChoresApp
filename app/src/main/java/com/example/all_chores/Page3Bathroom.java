@@ -1,4 +1,5 @@
 package com.example.all_chores;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -14,9 +15,12 @@ import androidx.fragment.app.Fragment;
 //import com.sun.istack.internal.Nullable;
 
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 public class Page3Bathroom extends Fragment {
+    private FloatingActionButton floatingActionButton1;
 
     public Page3Bathroom() {
         // required empty public constructor.
@@ -51,6 +55,15 @@ public class Page3Bathroom extends Fragment {
         seven.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3g, container, false)));
         eight.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3h, container, false)));
         tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3tips, container, false)));
+        floatingActionButton1 = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
+        floatingActionButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Page3Bathroom.this.getActivity(),CalendarActivity.class);
+                intent.putExtra(CalendarActivity.EXTRA_MESSAGE_TITLE,"Bathroom");
+                startActivity(intent);
+            }
+        });
         return view;
     }
 
