@@ -20,7 +20,7 @@ public class CalendarActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "date";
     public static final String EXTRA_MESSAGE_TITLE = "title from page";
     private String extraTitle;
-    private  static CalendarView myCalendarView;
+    private static CalendarView myCalendarView;
     private Button seeEvents;
     private Button back;
     private Button addTask;
