@@ -1950,7 +1950,7 @@ id fitToContents
 id fixed
 id flip
 id floating
-id floatingActionButton
+id floatingActionButton1
 id forever
 id fragment_container_view_tag
 id ghost_view

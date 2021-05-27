@@ -1,6 +1,7 @@
 package com.example.all_chores;
 import android.app.ActionBar;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Layout;
@@ -34,7 +35,7 @@ import static android.view.WindowManager.*;
 import static android.view.WindowManager.LayoutParams.*;
 
 public class Page1Laundry extends Fragment {
-
+    private FloatingActionButton floatingActionButton1;
     public Page1Laundry() {
         // required empty public constructor.
     }
@@ -42,6 +43,7 @@ public class Page1Laundry extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Nullable
@@ -68,6 +70,15 @@ public class Page1Laundry extends Fragment {
         seven.setOnClickListener(getListener(inflater.inflate(R.layout.fragment1g, container, false)));
         eight.setOnClickListener(getListener(inflater.inflate(R.layout.fragment1h, container, false)));
         tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment1tips, container, false)));
+        floatingActionButton1 = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
+        floatingActionButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Page1Laundry.this.getActivity(),CalendarActivity.class);
+                intent.putExtra(CalendarActivity.EXTRA_MESSAGE_TITLE,"Laundry");
+                startActivity(intent);
+            }
+        });
         return view;
     }
 

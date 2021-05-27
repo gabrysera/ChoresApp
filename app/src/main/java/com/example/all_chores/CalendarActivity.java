@@ -18,12 +18,13 @@ import java.util.Date;
 
 public class CalendarActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "date";
+    public static final String EXTRA_MESSAGE_TITLE = "title from page";
+    private String extraTitle;
     private  static CalendarView myCalendarView;
     private Button seeEvents;
     private Button back;
     private Button addTask;
     private String date;
-    private Date currentDate;
     static DataBase myDataBase;
     private final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
@@ -31,6 +32,8 @@ public class CalendarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calendar_page);
+        Intent i = getIntent();
+        extraTitle = i.getStringExtra(EXTRA_MESSAGE_TITLE);
         myDataBase = new DataBase(this);
         myCalendarView = (CalendarView) findViewById(R.id.calendarView);
         seeEvents = (Button) findViewById(R.id.showeventsbutton1);
@@ -38,8 +41,12 @@ public class CalendarActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                /*
                 Intent intent = new Intent(CalendarActivity.this, MainPage.class);
                 startActivity(intent);
+
+                 */
+                finish();
             }
         });
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -74,6 +81,8 @@ public class CalendarActivity extends AppCompatActivity {
     public void goToCreateTask(View view){
         Intent i = new Intent(this, AddTaskView.class);
         i.putExtra(EXTRA_MESSAGE,date);
+        if(extraTitle != null)
+            i.putExtra(EXTRA_MESSAGE_TITLE,extraTitle);
         startActivity(i);
     }
 

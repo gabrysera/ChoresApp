@@ -22,16 +22,19 @@ public class AddTaskView extends AppCompatActivity {
     private String date;
     private EditText getTitle;
     private EditText getTime;
-
+    private String titleFromPage;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_task_page);
         Intent intent = getIntent();
         date = intent.getStringExtra(CalendarActivity.EXTRA_MESSAGE);
+        titleFromPage = intent.getStringExtra(CalendarActivity.EXTRA_MESSAGE_TITLE);
         dateTextView = (Button) findViewById(R.id.buttonTitleAddTask);
         dateTextView.setText(date);
         getTitle = (EditText) findViewById(R.id.Title);
+        if(titleFromPage != null)
+            getTitle.setText(titleFromPage);
         getTime = (EditText) findViewById(R.id.editTextTime);
         descriptionText = (EditText) findViewById(R.id.TaskDescription);
         setDateTextView(date);
@@ -39,8 +42,12 @@ public class AddTaskView extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                /*
                 Intent intent = new Intent(AddTaskView.this, CalendarActivity.class);
                 startActivity(intent);
+
+                 */
+                finish();
             }
         });
         FloatingActionButton fab = findViewById(R.id.fab);
