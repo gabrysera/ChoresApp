@@ -51,7 +51,6 @@ public class ModifyEvent extends AppCompatActivity {
         changeTimeText.setText(event.getTime());
         setListeners();
     }
-
     private void setListeners(){
         buttonDelete.setOnClickListener(new View.OnClickListener() {
 
@@ -74,11 +73,12 @@ public class ModifyEvent extends AppCompatActivity {
                 if(delete){
                     ShowEvents.deleteButton(but);
                    deleteEvent();
+                    finish();
                 } else if (!checkTime(changeTimeText.getText().toString()) || !checkDate(changeDateText.getText().toString())) {
                     if(!checkTime(changeTimeText.getText().toString())){
                         Toast.makeText(getApplicationContext(), "The chosen time format is incorrect, please type the time in this format \"HH:MM\".", Toast.LENGTH_SHORT).show();
                     } else if (!checkDate(changeDateText.getText().toString())){
-                        Toast.makeText(getApplicationContext(), "The chosen date format is incorrect, please type the date in this format \"DD/MM/YYYY\".", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "The chosen date format is incorrect, please type the date in this format \"DD:MM:YYYY\".", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     changeEventPar(changeTitleText.getText().toString(),
@@ -168,12 +168,13 @@ public class ModifyEvent extends AppCompatActivity {
 
     private boolean checkDate(String date){
         if (date.matches("([1-9]{1}|[0]{1}[1-9]{1}|[1]{1}[0-9]{1}|[2]{1}[0-9]{1}|[3]{1}[0-1]{1})" +
-                    "([/]{1})" +
-                    "([0]{1}[1-9]{1}|[1]{1}[0-2]{1}|[1-9]{1})" +
-                    "([/]{1})" +
-                    "([20]{2}[0-9]{2})")) {
+                "([/]{1})" +
+                "([0]{1}[1-9]{1}|[1]{1}[0-2]{1}|[1-9]{1})" +
+                "([/]{1})" +
+                "([20]{2}[0-9]{2})")) {
             return true;
         }
         return false;
     }
+
 }

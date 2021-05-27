@@ -17,6 +17,7 @@ com/example/all_chores/MainPage.java
  com.example.all_chores.MainPage$1
  com.example.all_chores.MainPage$2
  com.example.all_chores.MainPage$3
+ com.example.all_chores.MainPage$4
 com/example/all_chores/ui/main/SectionsPagerAdapter.java
  com.example.all_chores.ui.main.SectionsPagerAdapter
 com/example/all_chores/Page4Windows.java

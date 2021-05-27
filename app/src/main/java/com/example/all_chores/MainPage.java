@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.viewpager.widget.ViewPager;
 /*
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -36,17 +37,16 @@ public class MainPage extends AppCompatActivity {
             //ViewPager viewPager = findViewById(R.id.view_pager);
 
             //viewPager.setAdapter(R.id.main_content);
-/*
-            Button exit = findViewById(R.id.exit);
+
+            Button exit = findViewById(R.id.nav_drawer);
             exit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     DrawerLayout drawer = findViewById(R.id.drawer_layout);
-
                        drawer.openDrawer(Gravity.NO_GRAVITY);
                 }
             });
-*/
+
             Button calendar = findViewById(R.id.btn_calender);
             calendar.setOnClickListener(new View.OnClickListener() {
                 @Override
