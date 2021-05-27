@@ -45,7 +45,6 @@ public class AddTaskView extends AppCompatActivity {
                 /*
                 Intent intent = new Intent(AddTaskView.this, CalendarActivity.class);
                 startActivity(intent);
-
                  */
                 finish();
             }
@@ -71,7 +70,7 @@ public class AddTaskView extends AppCompatActivity {
             CalendarActivity.getMyDataBase().addEventToDataBase(getTitle.getText().toString(), descriptionText.getText().toString(), date, getTime.getText().toString());
             finish();
         } else
-            Toast.makeText(getApplicationContext(), "The chosen format is incorrect, please type the time in this format \"HH:MM\".", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "The chosen format is incorrect, please type the time in this format \"HH:MM\".", Toast.LENGTH_LONG).show();
     }
 
     private boolean checkEventTexts(String time) {

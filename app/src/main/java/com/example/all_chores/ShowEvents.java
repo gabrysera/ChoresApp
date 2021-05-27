@@ -37,7 +37,6 @@ public class ShowEvents extends AppCompatActivity {
         dateTextView = (Button) findViewById(R.id.titleShowEvents);
         date = intent.getStringExtra(CalendarActivity.EXTRA_MESSAGE);
         dateTextView.setText(date);
-
         events = CalendarActivity.getMyDataBase().getEventsOnDate(date);
         table = (TableLayout)findViewById(R.id.tabletask);
         table.setColumnStretchable(0,true);
