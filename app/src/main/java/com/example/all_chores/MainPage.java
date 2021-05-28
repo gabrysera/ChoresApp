@@ -2,11 +2,15 @@ package com.example.all_chores;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -29,7 +33,11 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collections;
 import java.util.Date;
+import java.util.Hashtable;
 
 public class MainPage extends AppCompatActivity {
 
@@ -83,20 +91,32 @@ public class MainPage extends AppCompatActivity {
         }
 
         public void eventsOfDay() {
-            int no_tasks = 0;
-            //Now date is set to the current date, so that we can use that to search for instances
-            //in the database where this is equal to.
-            //I'm not sure though how the date is saved in the database, so I'm not sure whether this
-            //can be used this way.
-            Date today = new Date();
-            SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/YYYY");
-            String date_today = formatter.format(today);
+            String date_today = CalendarActivity.sdf.format(new Date());
 
-            //count nr of tasks where date is equal to date_today and set no_tasks equal to that amount.
-
-            TextView left = findViewById(R.id.events1);
-            TextView right = findViewById(R.id.events2);
-            left.setText("You have\nplanned");
-            right.setText(no_tasks+" tasks\nfor today.");
+            ArrayList<Event> events = CalendarActivity.getMyDataBase().getEventsOnDate(date_today);
+            //CalendarActivity.getMyDataBase() returns null, and I therefore get a NullPointerException.
+            //I tested it with putting random Events in the arraylist and that worked, so if we solve
+            //the problem of the nullpointerException, then it's ready to go.
+            TableLayout table = (TableLayout)findViewById(R.id.tabletask);
+            table.setColumnStretchable(0,true);
+            Collections.sort(events);
+            int c=0;
+            Hashtable<Button, Integer> numbers = new Hashtable<Button,Integer>();
+            for(Event event:events){
+                TableRow tr= new TableRow(this);
+                TableLayout.LayoutParams tableRowParams= new TableLayout.LayoutParams
+                        (TableLayout.LayoutParams.FILL_PARENT,TableLayout.LayoutParams.WRAP_CONTENT);
+                tableRowParams.setMargins(10,10,10,10);
+                tr.setLayoutParams(tableRowParams);
+                Button bt = new Button(this);
+                numbers.put(bt,c);
+                bt.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, 100));
+                bt.setTextColor(Color.BLACK);
+                bt.setBackgroundColor(Color.RED);
+                bt.setText(event.getTitle());
+                tr.addView(bt);
+                table.addView(tr);
+                c++;
+            }
         }
 }

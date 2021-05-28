@@ -26,7 +26,7 @@ public class CalendarActivity extends AppCompatActivity {
     private Button addTask;
     private String date;
     static DataBase myDataBase;
-    private final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    public static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
