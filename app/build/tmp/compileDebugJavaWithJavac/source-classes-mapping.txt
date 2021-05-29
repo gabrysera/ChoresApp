@@ -15,8 +15,12 @@ com/example/all_chores/Page3Bathroom.java
  com.example.all_chores.Page3Bathroom$1
  com.example.all_chores.Page3Bathroom$2
  com.example.all_chores.Page3Bathroom$2$1
-com/example/all_chores/ui/main/PageViewModel.java
- com.example.all_chores.ui.main.PageViewModel
+com/example/all_chores/MainPage.java
+ com.example.all_chores.MainPage
+ com.example.all_chores.MainPage$1
+ com.example.all_chores.MainPage$2
+ com.example.all_chores.MainPage$3
+ com.example.all_chores.MainPage$4
 com/example/all_chores/ui/main/SectionsPagerAdapter.java
  com.example.all_chores.ui.main.SectionsPagerAdapter
 com/example/all_chores/Page4Windows.java
@@ -63,9 +67,5 @@ com/example/all_chores/Page5GasStove.java
  com.example.all_chores.Page5GasStove$1
  com.example.all_chores.Page5GasStove$2
  com.example.all_chores.Page5GasStove$2$1
-com/example/all_chores/MainPage.java
- com.example.all_chores.MainPage
- com.example.all_chores.MainPage$1
- com.example.all_chores.MainPage$2
- com.example.all_chores.MainPage$3
- com.example.all_chores.MainPage$4
+com/example/all_chores/ui/main/PageViewModel.java
+ com.example.all_chores.ui.main.PageViewModel

@@ -41,11 +41,8 @@ public class CalendarActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*
                 Intent intent = new Intent(CalendarActivity.this, MainPage.class);
                 startActivity(intent);
-
-                 */
                 finish();
             }
         });

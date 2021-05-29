@@ -39,11 +39,8 @@ public class ChoresInformation extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*
-                Intent intent = new Intent(CalendarActivity.this, MainPage.class);
+                Intent intent = new Intent(ChoresInformation.this, MainPage.class);
                 startActivity(intent);
-
-                 */
                 finish();
             }
         });

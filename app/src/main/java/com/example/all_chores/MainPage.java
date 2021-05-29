@@ -65,6 +65,7 @@ public class MainPage extends AppCompatActivity {
                 public void onClick(View v) {
                     Intent intent = new Intent(MainPage.this, CalendarActivity.class);
                     startActivity(intent);
+                    finish();
                 }
             });
 
@@ -74,6 +75,7 @@ public class MainPage extends AppCompatActivity {
                 public void onClick(View v) {
                     Intent intent = new Intent(MainPage.this, ChoresInformation.class);
                     startActivity(intent);
+                    finish();
                 }
             });
 
@@ -93,10 +95,13 @@ public class MainPage extends AppCompatActivity {
         public void eventsOfDay() {
             String date_today = CalendarActivity.sdf.format(new Date());
 
-            ArrayList<Event> events = CalendarActivity.getMyDataBase().getEventsOnDate(date_today);
-            //CalendarActivity.getMyDataBase() returns null, and I therefore get a NullPointerException.
-            //I tested it with putting random Events in the arraylist and that worked, so if we solve
-            //the problem of the nullpointerException, then it's ready to go.
+            ArrayList<Event> events = new ArrayList<>();
+            if(CalendarActivity.getMyDataBase()!=null){
+                events = CalendarActivity.getMyDataBase().getEventsOnDate(date_today);
+            }
+            //CalendarActivity.getMyDataBase() returns null when you open the app, and I therefore get a NullPointerException.
+            //This way, when you open the app, the tasks of today aren't shown but they are when you come back from the
+            //calendar or information page. It isn't ideal, but I couldn't make it work better :(
             TableLayout table = (TableLayout)findViewById(R.id.tabletask);
             table.setColumnStretchable(0,true);
             Collections.sort(events);
