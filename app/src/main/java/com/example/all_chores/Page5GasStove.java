@@ -18,11 +18,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 public class Page5GasStove extends Fragment {
-    private FloatingActionButton floatingActionButton1;
-
-    public Page5GasStove() {
-        // required empty public constructor.
-    }
+    private Button one, two, three, four, five, tips;
+    private FloatingActionButton add;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,12 +31,12 @@ public class Page5GasStove extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment5, container, false);
 
-        Button one = (Button) view.findViewById(R.id.Button1);
-        Button two = (Button) view.findViewById(R.id.Button2);
-        Button three = (Button) view.findViewById(R.id.Button3);
-        Button four = (Button) view.findViewById(R.id.Button4);
-        Button five = (Button) view.findViewById(R.id.Button5);
-        Button tips = (Button) view.findViewById(R.id.Tips);
+        one = (Button) view.findViewById(R.id.Button1);
+        two = (Button) view.findViewById(R.id.Button2);
+        three = (Button) view.findViewById(R.id.Button3);
+        four = (Button) view.findViewById(R.id.Button4);
+        five = (Button) view.findViewById(R.id.Button5);
+        tips = (Button) view.findViewById(R.id.Tips);
 
         one.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5a, container, false)));
         two.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5b, container, false)));
@@ -47,8 +44,8 @@ public class Page5GasStove extends Fragment {
         four.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5d, container, false)));
         five.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5e, container, false)));
         tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5tips, container, false)));
-        floatingActionButton1 = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
-        floatingActionButton1.setOnClickListener(new View.OnClickListener() {
+        add = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
+        add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Page5GasStove.this.getActivity(),CalendarActivity.class);

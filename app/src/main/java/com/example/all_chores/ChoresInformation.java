@@ -16,13 +16,18 @@ import android.widget.Button;
 import com.example.all_chores.ui.main.SectionsPagerAdapter;
 
 public class ChoresInformation extends AppCompatActivity {
+    private ViewPager viewPager;
+    private SectionsPagerAdapter sectionsPagerAdapter;
+    private Button back;
+    private FloatingActionButton help;
+    TabLayout tabs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chores_information);
-        ViewPager viewPager = findViewById(R.id.view_pager);
-        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
+        viewPager = findViewById(R.id.view_pager);
+        sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         sectionsPagerAdapter.addFrag(new Page1Laundry(), "Laundry");
         sectionsPagerAdapter.addFrag(new Page2Dishes(), "Dishes");
         sectionsPagerAdapter.addFrag(new Page3Bathroom(), "Bathroom");
@@ -32,10 +37,10 @@ public class ChoresInformation extends AppCompatActivity {
 
         viewPager.setAdapter(sectionsPagerAdapter);
 
-        TabLayout tabs = findViewById(R.id.tabs);
+        tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
 
-        Button back = findViewById(R.id.back);
+        back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,9 +50,8 @@ public class ChoresInformation extends AppCompatActivity {
             }
         });
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-
-        fab.setOnClickListener(new View.OnClickListener() {
+        help = findViewById(R.id.fab);
+        help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "View detailed steps and tips by clicking the purple buttons or " +

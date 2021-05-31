@@ -20,11 +20,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 public class Page3Bathroom extends Fragment {
-    private FloatingActionButton floatingActionButton1;
-
-    public Page3Bathroom() {
-        // required empty public constructor.
-    }
+    private Button one, two, three, four, five, six, seven, eight, tips;
+    private FloatingActionButton add;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,15 +33,15 @@ public class Page3Bathroom extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment3, container, false);
 
-        Button one = (Button) view.findViewById(R.id.Button1);
-        Button two = (Button) view.findViewById(R.id.Button2);
-        Button three = (Button) view.findViewById(R.id.Button3);
-        Button four = (Button) view.findViewById(R.id.Button4);
-        Button five = (Button) view.findViewById(R.id.Button5);
-        Button six = (Button) view.findViewById(R.id.Button6);
-        Button seven = (Button) view.findViewById(R.id.Button7);
-        Button eight = (Button) view.findViewById(R.id.Button8);
-        Button tips = (Button) view.findViewById(R.id.Tips);
+        one = (Button) view.findViewById(R.id.Button1);
+        two = (Button) view.findViewById(R.id.Button2);
+        three = (Button) view.findViewById(R.id.Button3);
+        four = (Button) view.findViewById(R.id.Button4);
+        five = (Button) view.findViewById(R.id.Button5);
+        six = (Button) view.findViewById(R.id.Button6);
+        seven = (Button) view.findViewById(R.id.Button7);
+        eight = (Button) view.findViewById(R.id.Button8);
+        tips = (Button) view.findViewById(R.id.Tips);
 
         one.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3a, container, false)));
         two.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3b, container, false)));
@@ -55,8 +52,8 @@ public class Page3Bathroom extends Fragment {
         seven.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3g, container, false)));
         eight.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3h, container, false)));
         tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3tips, container, false)));
-        floatingActionButton1 = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
-        floatingActionButton1.setOnClickListener(new View.OnClickListener() {
+        add = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
+        add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Page3Bathroom.this.getActivity(),CalendarActivity.class);

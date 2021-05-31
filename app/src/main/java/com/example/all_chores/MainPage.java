@@ -40,17 +40,16 @@ import java.util.Date;
 import java.util.Hashtable;
 
 public class MainPage extends AppCompatActivity {
+        Button exit, calendar, info;
+        FloatingActionButton help;
+        String date_today = CalendarActivity.sdf.format(new Date());
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.main_page);
 
-            //ViewPager viewPager = findViewById(R.id.view_pager);
-
-            //viewPager.setAdapter(R.id.main_content);
-
-            Button exit = findViewById(R.id.nav_drawer);
+            exit = findViewById(R.id.nav_drawer);
             exit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -59,7 +58,7 @@ public class MainPage extends AppCompatActivity {
                 }
             });
 
-            Button calendar = findViewById(R.id.btn_calender);
+            calendar = findViewById(R.id.btn_calender);
             calendar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -69,7 +68,7 @@ public class MainPage extends AppCompatActivity {
                 }
             });
 
-            Button info = findViewById(R.id.btn_information);
+            info = findViewById(R.id.btn_information);
             info.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -79,9 +78,8 @@ public class MainPage extends AppCompatActivity {
                 }
             });
 
-            FloatingActionButton fab = findViewById(R.id.fab);
-
-            fab.setOnClickListener(new View.OnClickListener() {
+            help = findViewById(R.id.fab);
+            help.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Snackbar.make(view, "You can view the calendar or information about house chores " +
@@ -93,8 +91,6 @@ public class MainPage extends AppCompatActivity {
         }
 
         public void eventsOfDay() {
-            String date_today = CalendarActivity.sdf.format(new Date());
-
             ArrayList<Event> events = new ArrayList<>();
             if(CalendarActivity.getMyDataBase()!=null){
                 events = CalendarActivity.getMyDataBase().getEventsOnDate(date_today);
