@@ -30,9 +30,9 @@ import java.util.Date;
 import java.util.Hashtable;
 
 public class MainPage extends AppCompatActivity {
-        private Button calendar, info;
-        private FloatingActionButton help;
-        private String date_today = CalendarActivity.sdf.format(new Date());
+        Button calendar, info;
+        FloatingActionButton help;
+        String date_today = CalendarActivity.sdf.format(new Date());
         public static DataBase myDataBase;
 
         @Override
@@ -40,6 +40,7 @@ public class MainPage extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.main_page);
             myDataBase = new DataBase(this);
+
 
             calendar = findViewById(R.id.btn_calender);
             calendar.setOnClickListener(new View.OnClickListener() {
@@ -80,8 +81,6 @@ public class MainPage extends AppCompatActivity {
             TableLayout table = (TableLayout)findViewById(R.id.tabletask);
             table.setColumnStretchable(0,true);
             Collections.sort(events);
-            int c=0;
-            Hashtable<Button, Integer> numbers = new Hashtable<Button,Integer>();
             if (events.size() == 0){
                 TableRow tr= new TableRow(this);
                 TableLayout.LayoutParams tableRowParams= new TableLayout.LayoutParams
@@ -89,7 +88,6 @@ public class MainPage extends AppCompatActivity {
                 tableRowParams.setMargins(10,10,10,10);
                 tr.setLayoutParams(tableRowParams);
                 Button bt = new Button(this);
-                numbers.put(bt,c);
                 bt.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, 100));
                 bt.setTextColor(Color.BLACK);
                 bt.setBackgroundColor(Color.RED);
@@ -105,19 +103,16 @@ public class MainPage extends AppCompatActivity {
                     tableRowParams.setMargins(10,10,10,10);
                     tr.setLayoutParams(tableRowParams);
                     Button bt = new Button(this);
-                    numbers.put(bt,c);
                     bt.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, 100));
                     bt.setTextColor(Color.BLACK);
                     bt.setBackgroundColor(Color.RED);
                     bt.setText(event.getTitle());
                     tr.addView(bt);
                     table.addView(tr);
-                    c++;
                 }
             }
         }
-
         public static DataBase getMyDataBase() {
-            return myDataBase;
-        }
+        return myDataBase;
+    }
 }

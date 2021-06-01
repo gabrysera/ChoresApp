@@ -15,11 +15,8 @@ com/example/all_chores/Page3Bathroom.java
  com.example.all_chores.Page3Bathroom$1
  com.example.all_chores.Page3Bathroom$2
  com.example.all_chores.Page3Bathroom$2$1
-com/example/all_chores/MainPage.java
- com.example.all_chores.MainPage
- com.example.all_chores.MainPage$1
- com.example.all_chores.MainPage$2
- com.example.all_chores.MainPage$3
+com/example/all_chores/ui/main/PageViewModel.java
+ com.example.all_chores.ui.main.PageViewModel
 com/example/all_chores/ui/main/SectionsPagerAdapter.java
  com.example.all_chores.ui.main.SectionsPagerAdapter
 com/example/all_chores/Page4Windows.java
@@ -31,15 +28,13 @@ com/example/all_chores/Event.java
  com.example.all_chores.Event
 com/example/all_chores/BuildConfig.java
  com.example.all_chores.BuildConfig
-com/example/all_chores/CalendarActivity.java
- com.example.all_chores.CalendarActivity
- com.example.all_chores.CalendarActivity$1
- com.example.all_chores.CalendarActivity$2
- com.example.all_chores.CalendarActivity$3
-com/example/all_chores/ChoresInformation.java
- com.example.all_chores.ChoresInformation
- com.example.all_chores.ChoresInformation$1
- com.example.all_chores.ChoresInformation$2
+com/example/all_chores/Page5GasStove.java
+ com.example.all_chores.Page5GasStove
+ com.example.all_chores.Page5GasStove$1
+ com.example.all_chores.Page5GasStove$2
+ com.example.all_chores.Page5GasStove$2$1
+com/example/all_chores/ui/main/PlaceholderFragment.java
+ com.example.all_chores.ui.main.PlaceholderFragment
 com/example/all_chores/Page2Dishes.java
  com.example.all_chores.Page2Dishes
  com.example.all_chores.Page2Dishes$1
@@ -59,12 +54,17 @@ com/example/all_chores/Page1Laundry.java
  com.example.all_chores.Page1Laundry$1
  com.example.all_chores.Page1Laundry$2
  com.example.all_chores.Page1Laundry$2$1
-com/example/all_chores/ui/main/PlaceholderFragment.java
- com.example.all_chores.ui.main.PlaceholderFragment
-com/example/all_chores/Page5GasStove.java
- com.example.all_chores.Page5GasStove
- com.example.all_chores.Page5GasStove$1
- com.example.all_chores.Page5GasStove$2
- com.example.all_chores.Page5GasStove$2$1
-com/example/all_chores/ui/main/PageViewModel.java
- com.example.all_chores.ui.main.PageViewModel
+com/example/all_chores/MainPage.java
+ com.example.all_chores.MainPage
+ com.example.all_chores.MainPage$1
+ com.example.all_chores.MainPage$2
+ com.example.all_chores.MainPage$3
+com/example/all_chores/CalendarActivity.java
+ com.example.all_chores.CalendarActivity
+ com.example.all_chores.CalendarActivity$1
+ com.example.all_chores.CalendarActivity$2
+ com.example.all_chores.CalendarActivity$3
+com/example/all_chores/ChoresInformation.java
+ com.example.all_chores.ChoresInformation
+ com.example.all_chores.ChoresInformation$1
+ com.example.all_chores.ChoresInformation$2

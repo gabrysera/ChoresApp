@@ -25,7 +25,7 @@ public class CalendarActivity extends AppCompatActivity {
     private Button back;
     private Button addTask;
     private String date;
-    static DataBase myDataBase;
+    private static DataBase myDataBase;
     public static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     @Override
