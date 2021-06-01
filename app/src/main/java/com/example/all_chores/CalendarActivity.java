@@ -34,7 +34,7 @@ public class CalendarActivity extends AppCompatActivity {
         setContentView(R.layout.calendar_page);
         Intent i = getIntent();
         extraTitle = i.getStringExtra(EXTRA_MESSAGE_TITLE);
-        myDataBase = new DataBase(this);
+        myDataBase = MainPage.myDataBase;
         myCalendarView = (CalendarView) findViewById(R.id.calendarView);
         seeEvents = (Button) findViewById(R.id.showeventsbutton1);
         back = (Button) findViewById(R.id.back);

@@ -33,12 +33,13 @@ public class MainPage extends AppCompatActivity {
         Button exit, calendar, info;
         FloatingActionButton help;
         String date_today = CalendarActivity.sdf.format(new Date());
+        public static DataBase myDataBase;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.main_page);
-
+            myDataBase = new DataBase(this);
             exit = findViewById(R.id.nav_drawer);
             exit.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -82,18 +83,14 @@ public class MainPage extends AppCompatActivity {
 
         public void eventsOfDay() {
             ArrayList<Event> events = new ArrayList<>();
-            if(CalendarActivity.getMyDataBase()!=null){
-                events = CalendarActivity.getMyDataBase().getEventsOnDate(date_today);
-            }
-            //CalendarActivity.getMyDataBase() returns null when you open the app, and I therefore get a NullPointerException.
-            //This way, when you open the app, the tasks of today aren't shown but they are when you come back from the
-            //calendar or information page. It isn't ideal, but I couldn't make it work better :(
+            if(myDataBase != null)
+                events = getMyDataBase().getEventsOnDate(date_today);
             TableLayout table = (TableLayout)findViewById(R.id.tabletask);
             table.setColumnStretchable(0,true);
             Collections.sort(events);
             int c=0;
             Hashtable<Button, Integer> numbers = new Hashtable<Button,Integer>();
-            for(Event event:events){
+            if (events.size() == 0){
                 TableRow tr= new TableRow(this);
                 TableLayout.LayoutParams tableRowParams= new TableLayout.LayoutParams
                         (TableLayout.LayoutParams.FILL_PARENT,TableLayout.LayoutParams.WRAP_CONTENT);
@@ -104,10 +101,30 @@ public class MainPage extends AppCompatActivity {
                 bt.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, 100));
                 bt.setTextColor(Color.BLACK);
                 bt.setBackgroundColor(Color.RED);
-                bt.setText(event.getTitle());
+                bt.setText("no chores today!");
                 tr.addView(bt);
                 table.addView(tr);
-                c++;
+            }
+            else{
+                for(Event event:events){
+                    TableRow tr= new TableRow(this);
+                    TableLayout.LayoutParams tableRowParams= new TableLayout.LayoutParams
+                            (TableLayout.LayoutParams.FILL_PARENT,TableLayout.LayoutParams.WRAP_CONTENT);
+                    tableRowParams.setMargins(10,10,10,10);
+                    tr.setLayoutParams(tableRowParams);
+                    Button bt = new Button(this);
+                    numbers.put(bt,c);
+                    bt.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, 100));
+                    bt.setTextColor(Color.BLACK);
+                    bt.setBackgroundColor(Color.RED);
+                    bt.setText(event.getTitle());
+                    tr.addView(bt);
+                    table.addView(tr);
+                    c++;
+                }
             }
         }
+        public static DataBase getMyDataBase() {
+        return myDataBase;
+    }
 }
