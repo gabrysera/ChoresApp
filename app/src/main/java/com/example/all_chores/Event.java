@@ -27,31 +27,16 @@ public class Event implements Comparable<Event> {
 
     @Override
     public int compareTo(Event o) {
-        StringBuilder t1 = new StringBuilder(this.time);
-        t1.append (":00");
-        StringBuilder t2 = new StringBuilder(o.time);
-        t1.append (":00");
-        try {
-            Date time1 = simpleDateFormat.parse(t1.toString());
-            Date time2 = simpleDateFormat.parse(t2.toString());
-            long differenceInMilliSeconds
-                    = Math.abs(time2.getTime() - time1.getTime());
-            long differenceInHours
-                    = (differenceInMilliSeconds / (60 * 60 * 1000))
-                    % 24;
-            long differenceInMinutes
-                    = (differenceInMilliSeconds / (60 * 1000)) % 60;
-
-            if(differenceInHours != 0)
-                return (int)differenceInHours;
-            else if (differenceInMinutes != 0)
-                return (int)differenceInMinutes;
-            else
-                return 1;
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        return 1;
+        String[] parts1 = this.time.split(":");
+        int h1 = Integer.parseInt(parts1[0]);
+        int m1 = Integer.parseInt(parts1[1]);
+        String[] parts2 = o.getTime().split(":");
+        int h2 = Integer.parseInt(parts2[0]);
+        int m2 = Integer.parseInt(parts2[1]);
+        if(h1 == h2)
+            return (m1-m2);
+        else
+            return (h1-h2);
     }
 
     private int findYear(String date){
