@@ -20,13 +20,14 @@ public class ChoresInformation extends AppCompatActivity {
     private SectionsPagerAdapter sectionsPagerAdapter;
     private Button back;
     private FloatingActionButton help;
-    TabLayout tabs;
+    private TabLayout tabs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chores_information);
         viewPager = findViewById(R.id.view_pager);
+
         sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         sectionsPagerAdapter.addFrag(new Page1Laundry(), "Laundry");
         sectionsPagerAdapter.addFrag(new Page2Dishes(), "Dishes");

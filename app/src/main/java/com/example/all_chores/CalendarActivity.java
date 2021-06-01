@@ -37,6 +37,7 @@ public class CalendarActivity extends AppCompatActivity {
         myDataBase = MainPage.myDataBase;
         myCalendarView = (CalendarView) findViewById(R.id.calendarView);
         seeEvents = (Button) findViewById(R.id.showeventsbutton1);
+
         back = (Button) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,8 +47,8 @@ public class CalendarActivity extends AppCompatActivity {
                 finish();
             }
         });
-        FloatingActionButton fab = findViewById(R.id.fab);
 
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,12 +57,14 @@ public class CalendarActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
         addTask = (Button) findViewById(R.id.addTaskButton1);
 
         String selectedDate = sdf.format(new Date(myCalendarView.getDate()));
         date = selectedDate;
         seeEvents.setText("chores of day: "+selectedDate);
         addTask.setText("add chore on day: "+selectedDate);
+
         myCalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {

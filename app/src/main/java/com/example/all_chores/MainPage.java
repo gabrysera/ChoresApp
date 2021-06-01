@@ -30,9 +30,9 @@ import java.util.Date;
 import java.util.Hashtable;
 
 public class MainPage extends AppCompatActivity {
-        Button exit, calendar, info;
-        FloatingActionButton help;
-        String date_today = CalendarActivity.sdf.format(new Date());
+        private Button calendar, info;
+        private FloatingActionButton help;
+        private String date_today = CalendarActivity.sdf.format(new Date());
         public static DataBase myDataBase;
 
         @Override
@@ -40,14 +40,6 @@ public class MainPage extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.main_page);
             myDataBase = new DataBase(this);
-            exit = findViewById(R.id.nav_drawer);
-            exit.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    DrawerLayout drawer = findViewById(R.id.drawer_layout);
-                       drawer.openDrawer(Gravity.NO_GRAVITY);
-                }
-            });
 
             calendar = findViewById(R.id.btn_calender);
             calendar.setOnClickListener(new View.OnClickListener() {
@@ -124,7 +116,8 @@ public class MainPage extends AppCompatActivity {
                 }
             }
         }
+
         public static DataBase getMyDataBase() {
-        return myDataBase;
-    }
+            return myDataBase;
+        }
 }

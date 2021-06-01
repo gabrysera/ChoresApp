@@ -23,6 +23,7 @@ public class AddTaskView extends AppCompatActivity {
     private EditText getTitle;
     private EditText getTime;
     private String titleFromPage;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,19 +39,16 @@ public class AddTaskView extends AppCompatActivity {
         getTime = (EditText) findViewById(R.id.editTextTime);
         descriptionText = (EditText) findViewById(R.id.TaskDescription);
         setDateTextView(date);
+
         Button back = findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*
-                Intent intent = new Intent(AddTaskView.this, CalendarActivity.class);
-                startActivity(intent);
-                 */
                 finish();
             }
         });
-        FloatingActionButton fab = findViewById(R.id.fab);
 
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
