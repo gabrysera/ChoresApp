@@ -9,19 +9,10 @@ public class Event implements Comparable<Event> {
     private String title;
     private String date;
     private String time;
-    private static final SimpleDateFormat simpleDateFormat
-            = new SimpleDateFormat("HH:mm:ss");
-    private int year;
-    private int month;
-    private int day;
-
     public Event(String title, String description, String date, String time) {
         this.title=title;
         this.description = description;
         this.date = date;
-        this.year = findYear(date);
-        this.month = findMonth(date);
-        this.day = findDay(date);
         this.time = time;
     }
 
@@ -39,45 +30,6 @@ public class Event implements Comparable<Event> {
             return (h1-h2);
     }
 
-    private int findYear(String date){
-        String lastFourDigits = "";     //substring containing last 4 characters
-
-        if (date.length() > 4)
-        {
-            lastFourDigits = date.substring(date.length() - 4);
-        }
-        return Integer.parseInt(lastFourDigits);
-    }
-    // 3/5/2021   12/6/2021 12/12/2021
-    private int findMonth(String date){
-        char c1;
-        char c2;
-        if(date.charAt(3) != '/')
-            c1 = date.charAt(3);
-        else
-            c1 = ' ';
-        if(date.charAt(4) != '/')
-            c2 = date.charAt(4);
-        else
-            c2=' ';
-        String intMonth = (String.valueOf(c1) + String.valueOf(c2));
-        return Integer.parseInt(intMonth);
-    }
-    private int findDay(String date){
-        char c1;
-        char c2;
-        if(date.charAt(0) != '/')
-            c1 = date.charAt(3);
-        else
-            c1 = ' ';
-        if(date.charAt(1) != '/')
-            c2 = date.charAt(4);
-        else
-            c2=' ';
-        String intDay = (String.valueOf(c1) + String.valueOf(c2));
-        return Integer.parseInt(intDay);
-    }
-
     public String getTime() {
         return time;
     }
@@ -88,18 +40,6 @@ public class Event implements Comparable<Event> {
 
     public String getTitle() {
         return title;
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public int getMonth() {
-        return month;
-    }
-
-    public int getDay() {
-        return day;
     }
 
     public void setDescription(String description) {
