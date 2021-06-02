@@ -67,6 +67,7 @@ public class Page1Laundry extends Fragment {
         seven.setOnClickListener(getListener(inflater.inflate(R.layout.fragment1g, container, false)));
         eight.setOnClickListener(getListener(inflater.inflate(R.layout.fragment1h, container, false)));
         tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment1tips, container, false)));
+
         add = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
         add.setOnClickListener(new View.OnClickListener() {
             @Override

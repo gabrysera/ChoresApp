@@ -51,7 +51,7 @@ public class DataBase extends SQLiteOpenHelper {
         long bb = db.insert(EVENTS_TABLE_NAME, null, contentValues);
         return bb;
     }
-//
+
     public ArrayList<Event> getEventsOnDate (String date){
         ArrayList<Event> eventsOnDay = new ArrayList<>();
         Cursor r = getData(date);
@@ -76,6 +76,7 @@ public class DataBase extends SQLiteOpenHelper {
         " and "+ EVENTS_DESCRIPTION_COLUMN+" = "+"'"+description+"'"+ " and "+ EVENTS_DATE_COLUMN+" = "+ "'"+date+"'");
         db.execSQL(s.toString());
     }
+
     public void changeData(String title, String description, String date, String newTitle,
                            String newDescription, String newDate, String newTime){
         SQLiteDatabase db = getWritableDatabase();

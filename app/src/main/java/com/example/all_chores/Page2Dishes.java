@@ -45,6 +45,7 @@ public class Page2Dishes extends Fragment {
         four.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2d, container, false)));
         five.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2e, container, false)));
         six.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2f, container, false)));
+
         tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment2tips, container, false)));
         add = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
         add.setOnClickListener(new View.OnClickListener() {
@@ -76,5 +77,4 @@ public class Page2Dishes extends Fragment {
         };
         return listener;
     }
-
 }

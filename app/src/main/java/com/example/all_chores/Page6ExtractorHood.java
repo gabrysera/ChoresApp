@@ -43,8 +43,8 @@ public class Page6ExtractorHood extends Fragment {
         three.setOnClickListener(getListener(inflater.inflate(R.layout.fragment6c, container, false)));
         four.setOnClickListener(getListener(inflater.inflate(R.layout.fragment6d, container, false)));
         five.setOnClickListener(getListener(inflater.inflate(R.layout.fragment6e, container, false)));
-
         tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment6tips, container, false)));
+
         add = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
         add.setOnClickListener(new View.OnClickListener() {
             @Override

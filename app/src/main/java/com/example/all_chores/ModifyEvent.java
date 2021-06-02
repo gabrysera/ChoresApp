@@ -51,6 +51,7 @@ public class ModifyEvent extends AppCompatActivity {
         changeTimeText.setText(event.getTime());
         setListeners();
     }
+
     private void setListeners(){
         buttonDelete.setOnClickListener(new View.OnClickListener() {
 
@@ -93,8 +94,8 @@ public class ModifyEvent extends AppCompatActivity {
                 }
             }
         });
-        FloatingActionButton fab = findViewById(R.id.fab);
 
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -44,6 +44,7 @@ public class Page4Windows extends Fragment {
         four.setOnClickListener(getListener(inflater.inflate(R.layout.fragment4d, container, false)));
         five.setOnClickListener(getListener(inflater.inflate(R.layout.fragment4e, container, false)));
         tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment4tips, container, false)));
+
         add = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,5 +75,4 @@ public class Page4Windows extends Fragment {
         };
         return listener;
     }
-
 }

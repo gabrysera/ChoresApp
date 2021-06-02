@@ -43,6 +43,7 @@ public class Page5GasStove extends Fragment {
         three.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5c, container, false)));
         four.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5d, container, false)));
         five.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5e, container, false)));
+
         tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment5tips, container, false)));
         add = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
         add.setOnClickListener(new View.OnClickListener() {

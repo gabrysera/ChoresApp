@@ -52,6 +52,7 @@ public class Page3Bathroom extends Fragment {
         seven.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3g, container, false)));
         eight.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3h, container, false)));
         tips.setOnClickListener(getListener(inflater.inflate(R.layout.fragment3tips, container, false)));
+
         add = (FloatingActionButton) view.findViewById(R.id.floatingActionButton1);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,5 +83,4 @@ public class Page3Bathroom extends Fragment {
         };
         return listener;
     }
-
 }

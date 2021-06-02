@@ -30,9 +30,9 @@ import java.util.Date;
 import java.util.Hashtable;
 
 public class MainPage extends AppCompatActivity {
-        Button calendar, info;
-        FloatingActionButton help;
-        String date_today = CalendarActivity.sdf.format(new Date());
+        private Button calendar, info;
+        private FloatingActionButton help;
+        private String date_today = CalendarActivity.sdf.format(new Date());
         public static DataBase myDataBase;
 
         @Override
@@ -112,6 +112,7 @@ public class MainPage extends AppCompatActivity {
                 }
             }
         }
+
         public static DataBase getMyDataBase() {
         return myDataBase;
     }
