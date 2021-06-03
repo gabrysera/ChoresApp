@@ -72,8 +72,8 @@ public class ModifyEvent extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(delete){
-                    ShowEvents.deleteButton(but);
                     deleteEvent();
+                    ShowEvents.deleteButton(but);
                     finish();
                 } else if (!checkTime(changeTimeText.getText().toString()) || !checkDate(changeDateText.getText().toString())) {
                     if(!checkTime(changeTimeText.getText().toString())){
@@ -87,6 +87,9 @@ public class ModifyEvent extends AppCompatActivity {
                             changeDateText.getText().toString(),
                             changeTimeText.getText().toString());
                     ShowEvents.changeButton(but,changeTitleText.getText().toString());
+                    if(!event.getDate().equals(changeDateText.getText().toString())){
+                        ShowEvents.deleteButton(but);
+                    }
                     event.setDate(changeDateText.getText().toString());
                     event.setTime(changeTimeText.getText().toString());
                     event.setDescription(changeDescriptionText.getText().toString());
